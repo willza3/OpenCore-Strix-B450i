@@ -1,0 +1,50 @@
+
+Clover EFI installer log - Wed Jul 10 04:36:21 BST 2019
+Installer version: v2.4k r4972 EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *31.0 GB    disk0
+   1:                        EFI EFI                     209.7 MB   disk0s1
+   2:                  Apple_HFS Install macOS Mojave    30.7 GB    disk0s2
+
+/dev/disk1 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *120.0 GB   disk1
+   1:                        EFI EFI                     209.7 MB   disk1s1
+   2:                 Apple_APFS Container disk3         119.8 GB   disk1s2
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *250.1 GB   disk2
+   1:           Windows Recovery                         554.7 MB   disk2s1
+   2:                        EFI NO NAME                 104.9 MB   disk2s2
+   3:         Microsoft Reserved                         16.8 MB    disk2s3
+   4:       Microsoft Basic Data                         249.4 GB   disk2s4
+
+/dev/disk3 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +119.8 GB   disk3
+                                 Physical Store disk1s2
+   1:                APFS Volume macOS                   11.9 GB    disk3s1
+   2:                APFS Volume Preboot                 45.3 MB    disk3s2
+   3:                APFS Volume Recovery                509.7 MB   disk3s3
+   4:                APFS Volume VM                      20.5 KB    disk3s4
+
+Target volume /Volumes/macOS on disk3 is APFS on physical store disk1s2
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/macOS/EFIROOTDIR/EFI folder to /Volumes/macOS/EFI-Backups/r4972/2019-07-10-04h36/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing drivers64UEFI/SMCHelper-64.efi driver because VirtualSMC driver present
+
+Using default theme 'embedded'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
