@@ -8,6 +8,8 @@
 		<dict>
 			<key>Fixes</key>
 			<dict>
+				<key>FixHDA</key>
+				<true/>
 				<key>FixHPET</key>
 				<true/>
 				<key>FixIPIC</key>
@@ -29,11 +31,11 @@
 					<key>Find</key>
 					<data>
 					U0FUMA==
-					</data>
+ 					</data>
 					<key>Replace</key>
 					<data>
 					U0FUQQ==
-					</data>
+ 					</data>
 				</dict>
 			</array>
 		</dict>
@@ -41,7 +43,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>npci=0x2000 alcid=7</string>
+		<string>npci=0x2000 darkwake=1</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
@@ -58,13 +60,10 @@
 	<dict>
 		<key>Audio</key>
 		<dict>
+			<key>Inject</key>
+			<integer>7</integer>
 			<key>ResetHDA</key>
 			<true/>
-		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>ATI</key>
-			<string>0x67B01002</string>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -93,15 +92,7 @@
 		</dict>
 	</dict>
 	<key>Graphics</key>
-	<dict>
-		<key>FBName</key>
-		<string>Radeon</string>
-		<key>Inject</key>
-		<dict>
-			<key>ATI</key>
-			<true/>
-		</dict>
-	</dict>
+	<array/>
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleRTC</key>
