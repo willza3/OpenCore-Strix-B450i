@@ -9,18 +9,15 @@ Tested with macOS Mojave 10.14.5 (18F132). iCloud, iMessage and FaceTime are ful
 ## System Specifications
 
 - **Motherboard:** Asus ROG Strix B450-I
-  * Networking: RealtekRTL8111
-  * Audio Codec: Realtek ALC887
+  * Networking: Intel I211-AT
+  * Audio Codec: ROG SupremeFX (S1220A)
   * Wireless: Asus WiFi GO!
   
-- **CPU:** AMD Ryzen 5 2600X @ 3.6 GHz
-           AMD Ryzen 3 2200G @ 3.5 Ghz
+- **CPU:** AMD Ryzen 3 2200G @ 3.5 Ghz (temp)
 
-- **GPU:** Asus ROG Strix AMD Radeon R9 390
+- **GPU:** Sapphire Nitro+ Radeon RX 580 8GB
 
 ## Known Issues
-
-- DisplayPort does not work on certain versions of the R9 390.
 
 - Audio playback becomes unstable when using Spotify.
 
@@ -30,6 +27,6 @@ Tested with macOS Mojave 10.14.5 (18F132). iCloud, iMessage and FaceTime are ful
 
 - 32-Bit applications are not supported. This isn't an issue as Apple is dropping support anyway.
 
-*10 July, 2019*
+*26 July, 2019*
 
 ☘️
