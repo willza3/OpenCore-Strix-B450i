@@ -17,16 +17,37 @@ Tested with macOS Mojave 10.14.5 (18F132). iCloud, iMessage and FaceTime are ful
 
 - **GPU:** Sapphire Nitro+ Radeon RX 580 8GB
 
+## BIOS Settings
+
+For best results, load optimised defaults - BIOS Version 2301 (19/04/2019)
+
+- SVM Mode -> Disabled
+- SATA Mode -> AHCI
+- IOMMU -> Disabled
+- XHCI Hand-off -> Enabled
+- Boot\CSM -> Disabled
+- Secure Boot -> Other OS
+
+## Guides & Links
+
+#### Guides
+- [AIO Vanilla Hackintosh Guide](https://kb.hackintoshisfun.ml/clover/)
+- [GPU Guide(Great for determining GPU settings)](https://khronokernel-3.gitbook.io/catalina-gpu-buyers-guide/)
+
+#### Links
+- [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+- [Kext Repo](https://1drv.ms/f/s!AiP7m5LaOED-m-J8-MLJGnOgAqnjGw)
+
 ## Known Issues
 
 - Audio playback becomes unstable when using Spotify.
 
 - Ethernet becomes unresponsive after waking from sleep.
 
-- WiFi & Bluetooth cannot be used.
+- WiFi & Bluetooth don't work.
 
-- 32-Bit applications are not supported. This isn't an issue as Apple is dropping support anyway.
+- 32-Bit apps don't work. Catalina drops support for these anyway.
 
-*26 July, 2019*
+*26 September, 2019*
 
 ☘️
