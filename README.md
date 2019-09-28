@@ -6,12 +6,6 @@
  <img src="https://ibin.co/4wWyAVkKNTUv.png" width="383" height="46"/>
 </p>
 
-# macOS for Asus ROG STRIX B450-I
-
-<p align="center">
- <img src="https://ibin.co/4In2flcxe4x8.jpg"/>
-</p>
-
 Tested with macOS Mojave 10.14.6 Supplemental Update 2 (18G103). iCloud, iMessage, FaceTime and Siri are fully functional but make sure to change the relevant serial numbers if you decide to use this configuration. SMBIOS used is iMac 14,2.
 
 ## System Specifications
@@ -22,7 +16,7 @@ Tested with macOS Mojave 10.14.6 Supplemental Update 2 (18G103). iCloud, iMessag
   * Wireless: Asus WiFi GO!
   
 - **CPU:** AMD Ryzen 3 2200G @ 3.5 GHz (Temporary)
--          AMD Ryzen 5 2600X @ 0.0 GHz (Dead)
+           AMD Ryzen 5 2600X @ 0.0 GHz (Dead)
 
 - **GPU:** Sapphire Nitro+ Radeon RX 580 8GB
 
