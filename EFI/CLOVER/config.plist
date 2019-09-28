@@ -25,17 +25,17 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change SAT0 to SATA</string>
+					<string>change SAT0 to SATA, optionally pair with SSDT-SATA.aml (RehabMan)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
 					U0FUMA==
- 					</data>
+					</data>
 					<key>Replace</key>
 					<data>
 					U0FUQQ==
- 					</data>
+					</data>
 				</dict>
 			</array>
 		</dict>
@@ -43,18 +43,13 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>npci=0x2000 darkwake=1</string>
+		<string>-v npci=0x2000 darkwake=1</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
-		<key>NeverHibernate</key>
-		<true/>
-	</dict>
-	<key>CPU</key>
-	<dict>
-		<key>FrequencyMHz</key>
-		<integer>3500</integer>
+		<key>Timeout</key>
+		<integer>-1</integer>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -75,15 +70,11 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>Hide</key>
-		<array>
-			<string>Preboot</string>
-			<string>Recovery</string>
-			<string>VM</string>
-		</array>
 		<key>Scan</key>
 		<dict>
 			<key>Entries</key>
+			<true/>
+			<key>Legacy</key>
 			<true/>
 			<key>Linux</key>
 			<true/>
@@ -91,8 +82,6 @@
 			<true/>
 		</dict>
 	</dict>
-	<key>Graphics</key>
-	<array/>
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleRTC</key>
@@ -101,7 +90,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Release kernel</string>
+				<string>Disable panic kext logging on 10.13.x Release kernel</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -117,23 +106,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 - 10.14.3 Release kernel</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				igKEwHRC
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.1,10.14.2,10.14.3</string>
-				<key>Replace</key>
-				<data>
-				igKEwOtC
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 Release kernel</string>
+				<string>Disable panic kext logging on 10.14.4+ Release kernel</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -141,7 +114,7 @@
 				AIoChMB0
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4,10.14.5</string>
+				<string>10.14.x</string>
 				<key>Replace</key>
 				<data>
 				AIoChMDr
@@ -157,7 +130,7 @@
 				uaABAAAPMg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Dx+AAAAAAA==
@@ -173,7 +146,7 @@
 				6Ar2//+c
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6</string>
+				<string>10.13.x</string>
 				<key>Replace</key>
 				<data>
 				Dx9EAACc
@@ -181,23 +154,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - cpu_topology_sort -disable _x86_validate_topology</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				6Kn1//8=
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.1,10.14.2,10.14.3</string>
-				<key>Replace</key>
-				<data>
-				Dx9EAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpu_topology_sort -disable _x86_validate_topology</string>
+				<string>algrey - cpu_topology_sort -disable _x86_validate_topology (10.14.4+)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -205,7 +162,7 @@
 				6Jn1//8=
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4,10.14.5</string>
+				<string>10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Dx9EAAA=
@@ -240,56 +197,12 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				McAx2zHJMdIPokGJxkGJ0YM9yu2MAAB0GEiNPQ+GXwAx
-				9jHAQYnIRInyidno2HpYAEGD/gQPgvoBAABFMfbrDGYP
-				H4QAAAAAAA==
-				</data>
-				<key>MatchBuild</key>
-				<string>17G5019</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM9x+2MAAB0G0iNPQyG
-				XwC+HQAAgDHAQYnIRInyidno0npYAEGD/gQPgvQBAABF
-				MfbrBg8fAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				McAx2zHJMdIPokGJxkGJ0YM9yv2MAAB0GEiNPd+JXwAx
-				9jHAQYnIRInyidnoqH5YAEGD/gQPgvoBAABFMfbrDGYP
-				H4QAAAAAAA==
-				</data>
-				<key>MatchBuild</key>
-				<string>17G6029,17G6030</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM9x/2MAAB0G0iNPdyJ
-				XwC+HQAAgDHAQYnIRInyidnoon5YAEGD/gQPgvQBAABF
-				MfbrBg8fAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
 				McAx2zHJMdIPokGJxkGJ0YM92gaNAAB0GEiNPRmWXwAx
 				9jHAQYnIRInyidnouIpYAEGD/gQPgvoBAABFMfbrDGYP
 				H4QAAAAAAA==
 				</data>
 				<key>MatchBuild</key>
-				<string>17G7024</string>
+				<string>17G8030,17G8037</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -306,76 +219,38 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				McAx2zHJMdIPokGJxkGJ0YM9+kGYAAB0GEiNPSvZZwAx
-				9jHAQYnIRInyidno2CxgAEGD/gQPgvsBAABFMfbrDGYP
+				McAx2zHJMdIPokGJxoM93W+YAAB0G0GJ0UiNPRnAZwAx
+				9jHAQYnIRInyidnoGBhgAEGD/gQPgvgBAABFMfbrDGYP
 				H4QAAAAAAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.1</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM990GYAAB0G0iNPSjZ
-				ZwC+HQAAgDHAQYnIRInyidno0ixgAEGD/gQPgvUBAABF
+				uB0AAIAx2zHJMdIPokGJxkGJ0YM912+YAAB0G0iNPRbA
+				ZwC+HQAAgDHAQYnIRInyidnoEhhgAEGD/gQPgvIBAABF
 				MfbrBg8fAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
+				<string>xlnc - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				McAx2zHJMdIPokGJxkGJ0YM9SiSYAAB0GEiNPQvGZwAx
-				9jHAQYnIRInyidnoWBpgAEGD/gQPgvsBAABFMfbrDGYP
+				McAx2zHJMdIPokGJxoM93V+YAAB0G0GJ0UiNPf2/ZwAx
+				9jHAQYnIRInyidnoWBtgAEGD/gQPgvgBAABFMfbrDGYP
 				H4QAAAAAAA==
 				</data>
+				<key>MatchBuild</key>
+				<string>18G95,18G103</string>
 				<key>MatchOS</key>
-				<string>10.14.3</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM9RySYAAB0G0iNPQjG
-				ZwC+HQAAgDHAQYnIRInyidnoUhpgAEGD/gQPgvUBAABF
-				MfbrBg8fAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				McAx2zHJMdIPokGJxoM9re2XAAB0G0GJ0UiNPRehZwAx
-				9jHAQYnIRInyidnoWP1fAEGD/gQPgvgBAABFMfbrDGYP
-				H4QAAAAAAA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM9p+2XAAB0G0iNPRSh
-				ZwC+HQAAgDHAQYnIRInyidnoUv1fAEGD/gQPgvUBAABF
-				MfbrBg8fAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cache_info - cpuid 0x8000001D instead 0</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				McAx2zHJMdIPokGJxoM9JWKYAAB0G0GJ0UiNPRy0ZwAx
-				9jHAQYnIRInyidnoiBBgAEGD/gQPgvgBAABFMfbrDGYP
-				H4QAAAAAAA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.5</string>
-				<key>Replace</key>
-				<data>
-				uB0AAIAx2zHJMdIPokGJxkGJ0YM9H2KYAAB0G0iNPRm0
-				ZwC+HQAAgDHAQYnIRInyidnoghBgAEGD/gQPgvUBAABF
+				uB0AAIAx2zHJMdIPokGJxkGJ0YM912+YAAB0G0iNPfq/
+				ZwC+HQAAgDHAQYnIRInyidnoUhtgAEGD/gQPgvIBAABF
 				MfbrBg8fAA==
 				</data>
 			</dict>
@@ -389,7 +264,7 @@
 				uAQAAABEifFEiQ==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				uB0AAIBEifFEiQ==
@@ -405,7 +280,7 @@
 				wega/8A=
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Dx8A6wY=
@@ -421,7 +296,7 @@
 				uYsAAAAxwDHSDzA=
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Zg8fhAAAAAAAZpA=
@@ -437,7 +312,7 @@
 				uYsAAAAPMg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				uroAAABmkA==
@@ -453,7 +328,7 @@
 				uRcAAAAPMsHqEoDiBw==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				sgFmDx+EAAAAAABmkA==
@@ -469,7 +344,7 @@
 				ADoPgg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				AAAPgg==
@@ -485,7 +360,7 @@
 				R2VudWluZUludGVsAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				QXV0aGVudGljQU1EAA==
@@ -493,7 +368,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
+				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -506,48 +381,12 @@
 				<string>10.13.6</string>
 				<key>Replace</key>
 				<data>
-				u58h/DfpXQAAAJA=
+				u7xP6njpXQAAAJA=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				MduAPbjzjAAGdVw=
-				</data>
-				<key>MatchBuild</key>
-				<string>17G5019</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				u58h/DfpXQAAAJA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				MduAPbgDjQAGdVw=
-				</data>
-				<key>MatchBuild</key>
-				<string>17G6029,17G6030</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				u58h/DfpXQAAAJA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
+				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -555,76 +394,46 @@
 				MduAPagMjQAGdVw=
 				</data>
 				<key>MatchBuild</key>
-				<string>17G7024</string>
+				<string>17G8030,17G8037</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
 				<data>
-				u58h/DfpXQAAAJA=
+				u7xP6njpXQAAAJA=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
+				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				MduAPehHmAAGdVw=
+				MduAPUh5mAAGdVw=
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.1</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
-				u58h/DfpXQAAAJA=
+				u7xP6njpXQAAAJA=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
+				<string>xlnc - cpuid_set_cpufamily - force CPUFAMILY_INTEL_PENRYN</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				MduAPTgqmAAGdVw=
+				MduAPUhpmAAGdVw=
 				</data>
+				<key>MatchBuild</key>
+				<string>18G95,18G103</string>
 				<key>MatchOS</key>
-				<string>10.14.3</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
-				u58h/DfpXQAAAJA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				MduAPZjzlwAGdVw=
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Replace</key>
-				<data>
-				u58h/DfpXQAAAJA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_cpufamily - force CPUFAMILY_INTEL_SKYLAKE </string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				MduAPchomAAGdVw=
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.5</string>
-				<key>Replace</key>
-				<data>
-				u58h/DfpXQAAAJA=
+				u7xP6njpXQAAAJA=
 				</data>
 			</dict>
 			<dict>
@@ -660,58 +469,6 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				PexeO1d0Gz28T+p4dTaLBcjyjACJBYrzjACLDcDyjADr
-				Frk1AAAADzIPt8jB6BCD4A+JBWzzjACJDWrzjACFwHVK
-				6zC5NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt9GJyMHo
-				EIkFOvOMAIkVOPOMAIXAdRiLBWLyjACJBSTzjACLBVry
-				jACJBRzzjAA=
-				</data>
-				<key>MatchBuild</key>
-				<string>17G5019</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0YM97/OMAAB0G2YP
-				H4QAAAAAAGYPH4QAAAAAAGYPH4QAAAAAAEUPtvZB/8a4
-				HgAAgDHbMckx0g+iQYnAQYnRZg8fhAAAAAAAD7bP/8Ex
-				0kSJ8PfxiQVt8owARIk1avKMAIM9J/OMAAB1DYkFH/OM
-				AESJNRzzjAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				PexeO1d0Gz28T+p4dTaLBcgCjQCJBYoDjQCLDcACjQDr
-				Frk1AAAADzIPt8jB6BCD4A+JBWwDjQCJDWoDjQCFwHVK
-				6zC5NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt9GJyMHo
-				EIkFOgONAIkVOAONAIXAdRiLBWICjQCJBSQDjQCLBVoC
-				jQCJBRwDjQA=
-				</data>
-				<key>MatchBuild</key>
-				<string>17G6029,17G6030</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0YM97wONAAB0G2YP
-				H4QAAAAAAGYPH4QAAAAAAGYPH4QAAAAAAEUPtvZB/8a4
-				HgAAgDHbMckx0g+iQYnAQYnRZg8fhAAAAAAAD7bP/8Ex
-				0kSJ8PfxiQVtAo0ARIk1agKNAIM9JwONAAB1DYkFHwON
-				AESJNRwDjQA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
 				PexeO1d0Gz28T+p4dTaLBbgLjQCJBXoMjQCLDbALjQDr
 				Frk1AAAADzIPt8jB6BCD4A+JBVwMjQCJDVoMjQCFwHVK
 				6zC5NQAAAA8ySMHiIInBSAnRuQEAAQAPRcgPt9GJyMHo
@@ -719,7 +476,7 @@
 				jQCJBQwMjQA=
 				</data>
 				<key>MatchBuild</key>
-				<string>17G7024</string>
+				<string>17G8030,17G8037</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -738,90 +495,48 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				PexeO1d0Gz28T+p4dSaLBfhGmACJBbpHmACLDfBGmADr
+				PexeO1d0Gz28T+p4dSaLBVd4mACJBRl5mACLDU94mADr
 				OLk1AAAADzIPt8jB6BCD4A/rILk1AAAADzJIweIgicFI
-				CdG6AQABAA9F0A+3yonQwegQiQV6R5gAiQ14R5gAhcB0
+				CdG6AQABAA9F0A+3yonQwegQiQXZeJgAiQ3XeJgAhcB0
 				Gg==
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.1</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
 				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
 				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
-				BcVGmABEiTXCRpgAgz1/R5gAAHUNiQV3R5gARIk1dEeY
+				BSR4mABEiTUheJgAgz3eeJgAAHUNiQXWeJgARIk103iY
 				AA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
+				<string>xlnc - cpuid_set_info - ryzen cores and logicals count</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				PexeO1d0Gz28T+p4dSaLBUgpmACJBQoqmACLDUApmADr
+				PexeO1d0Gz28T+p4dSaLBVdomACJBRlpmACLDU9omADr
 				OLk1AAAADzIPt8jB6BCD4A/rILk1AAAADzJIweIgicFI
-				CdG6AQABAA9F0A+3yonQwegQiQXKKZgAiQ3IKZgAhcB0
+				CdG6AQABAA9F0A+3yonQwegQiQXZaJgAiQ3XaJgAhcB0
 				Gg==
 				</data>
+				<key>MatchBuild</key>
+				<string>18G95,18G103</string>
 				<key>MatchOS</key>
-				<string>10.14.3</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
 				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
 				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
-				BRUpmABEiTUSKZgAgz3PKZgAAHUNiQXHKZgARIk1xCmY
+				BSRomABEiTUhaJgAgz3eaJgAAHUNiQXWaJgARIk102iY
 				AA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				PexeO1d0Gz28T+p4dSaLBafylwCJBWnzlwCLDZ/ylwDr
-				OLk1AAAADzIPt8jB6BCD4A/rILk1AAAADzJIweIgicFI
-				CdG6AQABAA9F0A+3yonQwegQiQUp85cAiQ0n85cAhcB0
-				Gg==
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
-				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
-				BXTylwBEiTVx8pcAgz0u85cAAHUNiQUm85cARIk1I/OX
-				AA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - cpuid_set_info - ryzen cores and logicals count</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				PexeO1d0Gz28T+p4dSaLBddnmACJBZlomACLDc9nmADr
-				OLk1AAAADzIPt8jB6BCD4A/rILk1AAAADzJIweIgicFI
-				CdG6AQABAA9F0A+3yonQwegQiQVZaJgAiQ1XaJgAhcB0
-				Gg==
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.5</string>
-				<key>Replace</key>
-				<data>
-				uAgAAIAx2zHJMdIPokGJwEGJzkGJ0UUPtvZB/8a4HgAA
-				gDHbMckx0g+iQYnAQYnRDx9EAAAPts//wTHSRInw9/GJ
-				BaRnmABEiTWhZ5gAgz1eaJgAAHUNiQVWaJgARIk1U2iY
-				AA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - i386_init - remove rdmsr</string>
+				<string>algrey - i386_init - remove rdmsr (x3)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -830,7 +545,7 @@
 				WAIxBTHJRTHA
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				Zg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAAAAAAZg8fhAAA
@@ -839,15 +554,45 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen</string>
+				<string>algrey - tsc_init - remove Penryn check to execute default case</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				RIug0AEAAIuY1AEAAEiNPeuNXgDo2gMAAEiFwLkANm4B
-				SA9FyEiJyEkPr8RFMf8x0kj380iJBQCrhQBIiQUhq4UA
-				SLrbNLbXgt4bQ0iJyEj34kjB6hJpwkBCDwApwUiNPaeN
-				XgAxwInWicpMieFJidjobTNXAEiLHeaqhQA=
+				PbxP6ngPhI0BAAA=
+				</data>
+				<key>MatchOS</key>
+				<string>10.13.6</string>
+				<key>Replace</key>
+				<data>
+				ZmZmDx+EAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - tsc_init - remove Penryn check to execute default case</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				PbxP6ngPhN0BAAA=
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				ZmZmDx+EAAAAAAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - tsc_init - grab DID and VID from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				uZQBAAAPMonDuc4AAAAPMg+2zokNcKmFAA+2xIkFa6mF
+				AA==
 				</data>
 				<key>MatchBuild</key>
 				<string>17G65,17G66</string>
@@ -855,230 +600,136 @@
 				<string>10.13.6</string>
 				<key>Replace</key>
 				<data>
-				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
-				acYAwusLSAH2SIkFCquFADHSSPf2SInDSIkdI6uFAEiJ
-				NQyrhQBmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
-				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIAcBm
+				kA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen</string>
+				<string>algrey - tsc_init - grab DID and VID from MSR</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				RIug0AEAAIuY1AEAAEiNPceBXgDo2gMAAEiFwLkANm4B
-				SA9FyEiJyEkPr8RFMf8x0kj380iJBQCThQBIiQUhk4UA
-				SLrbNLbXgt4bQ0iJyEj34kjB6hJpwkBCDwApwUiNPYOB
-				XgAxwInWicpMieFJidjoXSRXAEiLHeaShQA=
+				uZQBAAAPMonDuc4AAAAPMg+2zokN2KiFAA+2xIkF06iF
+				AA==
 				</data>
 				<key>MatchBuild</key>
-				<string>17G5019</string>
+				<string>17G8030,17G8037</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
 				<data>
-				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
-				acYAwusLSAH2SIkFCpOFADHSSPf2SInDSIkdI5OFAEiJ
-				NQyThQBmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
-				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIAcBm
+				kA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen</string>
+				<string>algrey - tsc_init - grab DID and VID from MSR</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				RIug0AEAAIuY1AEAAEiNPZeFXgDo2gMAAEiFwLkANm4B
-				SA9FyEiJyEkPr8RFMf8x0kj380iJBQCjhQBIiQUho4UA
-				SLrbNLbXgt4bQ0iJyEj34kjB6hJpwkBCDwApwUiNPVOF
-				XgAxwInWicpMieFJidjoLShXAEiLHeaihQA=
+				uZQBAAAPMonDuc4AAAAPMg+2zokNst+QAA+2xIkFrd+Q
+				AA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIAcBm
+				kA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xlnc - tsc_init - grab DID and VID from MSR</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				uZQBAAAPMonDuc4AAAAPMg+2zokNss+QAA+2xIkFrc+Q
+				AA==
 				</data>
 				<key>MatchBuild</key>
-				<string>17G6029,17G6030</string>
+				<string>18G95,18G103</string>
+				<key>MatchOS</key>
+				<string>10.14.6</string>
+				<key>Replace</key>
+				<data>
+				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIAcBm
+				kA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>algrey - tsc_init - skip test and go get FSBFrequency</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				SIkFRKmFAPfDAAABAHQ=
+				</data>
+				<key>MatchBuild</key>
+				<string>17G65,17G66</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
 				<data>
-				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
-				acYAwusLSAH2SIkFCqOFADHSSPf2SInDSIkdI6OFAEiJ
-				NQyjhQBmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
-				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
+				SIkFRKmFAGYPH0QAAOs=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen</string>
+				<string>algrey - tsc_init - skip test and go get FSBFrequency</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				RIug2AEAAIuY3AEAAEiNPd+QXgDo2gMAAEiFwLkANm4B
-				SA9FyEiJyEkPr8RFMf8x0kj380iJBWiqhQBIiQWJqoUA
-				SLrbNLbXgt4bQ0iJyEj34kjB6hJpwkBCDwApwUiNPZuQ
-				XgAxwInWicpMieFJidjorTJXAEiLHU6qhQA=
+				SIkFrKiFAPfDAAABAHQ=
 				</data>
 				<key>MatchBuild</key>
-				<string>17G7024</string>
+				<string>17G8030,17G8037</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
 				<data>
-				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
-				acYAwusLSAH2SIkFcqqFADHSSPf2SInDSIkdi6qFAEiJ
-				NXSqhQBmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
-				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
+				SIkFrKiFAGYPH0QAAOs=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen</string>
+				<string>algrey - tsc_init - skip test and go get FSBFrequency</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				RIug0AEAAIuY1AEAAEiNPWqsZgDo8AMAAEiFwLkANm4B
-				SA9FyEiJyEkPr8Qx0kj380iJBenFkABIiQUKxpAASLrb
-				NLbXgt4bQ0iJyEj34kUx/0jB6hJpwkBCDwApwUiNPSas
-				ZgAxwInWicpMieFJidjoQ6teAEiLHczFkAA=
+				SIkFht+QAPfDAAABAHQ=
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.1</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
-				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
-				acYAwusLSAH2SIkF8MWQADHSSPf2SInDSIkdCcaQAEiJ
-				NfLFkABmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
-				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
+				SIkFht+QAGYPH0QAAOs=
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen</string>
+				<string>xlnc - tsc_init - skip test and go get FSBFrequency</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				RIug0AEAAIuY1AEAAEiNPTqZZgDo8AMAAEiFwLkANm4B
-				SA9FyEiJyEkPr8Qx0kj380iJBSmokABIiQVKqJAASLrb
-				NLbXgt4bQ0iJyEj34kUx/0jB6hJpwkBCDwApwUiNPfaY
-				ZgAxwInWicpMieFJidjos5heAEiLHQyokAA=
+				SIkFhs+QAPfDAAABAHQ=
 				</data>
+				<key>MatchBuild</key>
+				<string>18G95,18G103</string>
 				<key>MatchOS</key>
-				<string>10.14.3</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
-				uWQAAcAPMg+2yInGwe4Ig+Y/RTH/MdJIichI9/ZIicZI
-				acYAwusLSAH2SIkFMKiQADHSSPf2SInDSIkdSaiQAEiJ
-				NTKokABmDx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAABm
-				Dx+EAAAAAABmDx+EAAAAAABmDx+EAAAAAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SInISQ+vx0Ux7THSSff0SInGSIkFA2eQAEi62zS214Le
-				G0NIichI9+JIiTUUZ5AASMHqEmnCQEIPACnBSI09QWpm
-				ADHAidaJykyJ+U2J4OjgcF4ASIsd6WaQAA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Replace</key>
-				<data>
-				uWQAAcAPMg+2yInGwe4Ig+Y/MdJIichI9/ZIicZIaf4A
-				wusLSAH2SIk97maQADHSSIn4SPf2SInDSIkdBGeQAEiJ
-				Ne1mkABmDx+EAAAAAABmDx+EAAAAAABmkA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SInISQ+vx0Ux7THSSff0SInGSIkFm9CQAEi62zS214Le
-				G0NIichI9+JIiTWs0JAASMHqEmnCQEIPACnBSI09onVm
-				ADHAidaJykyJ+U2J4OjQd14ASIsdgdCQAA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.5</string>
-				<key>Replace</key>
-				<data>
-				uWQAAcAPMg+2yInGwe4Ig+Y/MdJIichI9/ZIicZIaf4A
-				wusLSAH2SIk9htCQADHSSIn4SPf2SInDSIkdnNCQAEiJ
-				NYXQkABmDx+EAAAAAABmDx+EAAAAAABmkA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen part 2</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				RIu70AEAAESLo9QBAAA=
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Replace</key>
-				<data>
-				SInY6UACAABmDx9EAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - tsc_init - replace skylake with zen part 2</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				RIu72AEAAESLo9wBAAA=
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.5</string>
-				<key>Replace</key>
-				<data>
-				SInY6UACAABmDx9EAAA=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - tsc_init - use TSC calculated from MSR</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SIkFlGWQAA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Replace</key>
-				<data>
-				TIkllGWQAA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - tsc_init - use TSC calculated from MSR</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				SIkFLM+QAA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.5</string>
-				<key>Replace</key>
-				<data>
-				TIklXc+QAA==
+				SIkFhs+QAGYPH0QAAOs=
 				</data>
 			</dict>
 			<dict>
@@ -1091,7 +742,7 @@
 				JfwAAACD+BM=
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.x</string>
+				<string>10.13.x,10.14.x</string>
 				<key>Replace</key>
 				<data>
 				JfAAAADrI5A=
@@ -1122,46 +773,10 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				gz2UfnAAAHQK
-				</data>
-				<key>MatchBuild</key>
-				<string>17G5019</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				60gPH4AAAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - lapic_interrupt - skip checks and prevent panic</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				gz2UjnAAAHQK
-				</data>
-				<key>MatchBuild</key>
-				<string>17G6029,17G6030</string>
-				<key>MatchOS</key>
-				<string>10.13.6</string>
-				<key>Replace</key>
-				<data>
-				60gPH4AAAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - lapic_interrupt - skip checks and prevent panic</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
 				gz3UlXAAAHQK
 				</data>
 				<key>MatchBuild</key>
-				<string>17G7024</string>
+				<string>17G8030,17G8037</string>
 				<key>MatchOS</key>
 				<string>10.13.6</string>
 				<key>Replace</key>
@@ -1176,10 +791,10 @@
 				<false/>
 				<key>Find</key>
 				<data>
-				gz2UmHsAAHQK
+				gz31zXsAAHQK
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.1</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
 				60gPH4AAAAAA
@@ -1187,47 +802,17 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - lapic_interrupt - skip checks and prevent panic</string>
+				<string>xlnc - lapic_interrupt - skip checks and prevent panic</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				gz3UensAAHQK
+				gz31vXsAAHQK
 				</data>
+				<key>MatchBuild</key>
+				<string>18G95,18G103</string>
 				<key>MatchOS</key>
-				<string>10.14.3</string>
-				<key>Replace</key>
-				<data>
-				60gPH4AAAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - lapic_interrupt - skip checks and prevent panic</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				gz3VWHsAAHQK
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.4</string>
-				<key>Replace</key>
-				<data>
-				60gPH4AAAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>algrey - lapic_interrupt - skip checks and prevent panic</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				gz0VwXsAAHQK
-				</data>
-				<key>MatchOS</key>
-				<string>10.14.5</string>
+				<string>10.14.6</string>
 				<key>Replace</key>
 				<data>
 				60gPH4AAAAAA
@@ -1243,7 +828,7 @@
 				icCB4v//8P+BygAAAQC5dwIAAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.13.6,10.14.1,10.14.3</string>
+				<string>10.13.x</string>
 				<key>Replace</key>
 				<data>
 				uXcCAAC4BgEHALoGAQcADx9AAA==
@@ -1251,7 +836,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>algrey - mtrr_update_action - fix PAT</string>
+				<string>algrey - mtrr_update_action - fix PAT (x2) (10.14.4+)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
@@ -1259,7 +844,7 @@
 				icCB4v//AP+BygAAAQC5dwIAAA==
 				</data>
 				<key>MatchOS</key>
-				<string>10.14.4,10.14.5</string>
+				<string>10.14.x</string>
 				<key>Replace</key>
 				<data>
 				uXcCAAC4BgEHALoGAQcADx9AAA==
@@ -1274,20 +859,20 @@
 		<key>CsrActiveConfig</key>
 		<string>0x3E7</string>
 		<key>MLB</key>
-		<string>D25533500J9F8YL1F</string>
+		<string>D25318100GUF8YL8C</string>
 		<key>ROM</key>
 		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
 		<key>BoardSerialNumber</key>
-		<string>D25Q70LJF8JC</string>
+		<string>D25318100GUF8YL8C</string>
 		<key>ProductName</key>
 		<string>iMac14,2</string>
 		<key>SerialNumber</key>
-		<string>D25Q70LJF8JC</string>
+		<string>D25KN0MQF8JC</string>
 		<key>SmUUID</key>
-		<string>67B4E93C-5641-467C-A937-125ADF02D178</string>
+		<string>E7E5D00E-80A4-4B4B-B31F-83F12CC9D8E0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>

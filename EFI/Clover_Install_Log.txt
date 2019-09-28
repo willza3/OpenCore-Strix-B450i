@@ -1,49 +1,43 @@
 
-Clover EFI installer log - Wed Jul 10 04:36:21 BST 2019
-Installer version: v2.4k r4972 EFI bootloader
+Clover EFI installer log - Fri Sep 27 23:53:22 BST 2019
+Installer version: v2.5k r5091 EFI bootloader
 ======================================================
-/dev/disk0 (internal, physical):
+/dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *31.0 GB    disk0
-   1:                        EFI EFI                     209.7 MB   disk0s1
-   2:                  Apple_HFS Install macOS Mojave    30.7 GB    disk0s2
+   0:      GUID_partition_scheme                         251.0 GB   disk0
+   1:                        EFI EFI                     314.6 MB   disk0s1
+   2:                 Apple_APFS Container disk1         250.7 GB   disk0s2
 
-/dev/disk1 (internal, physical):
+/dev/disk1 (synthesized):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *120.0 GB   disk1
-   1:                        EFI EFI                     209.7 MB   disk1s1
-   2:                 Apple_APFS Container disk3         119.8 GB   disk1s2
+   0:      APFS Container Scheme -                      +250.7 GB   disk1
+                                 Physical Store disk0s2
+   1:                APFS Volume macOS                   139.2 GB   disk1s1
+   2:                APFS Volume Preboot                 44.7 MB    disk1s2
+   3:                APFS Volume Recovery                510.4 MB   disk1s3
+   4:                APFS Volume VM                      3.2 GB     disk1s4
 
-/dev/disk2 (internal, physical):
+/dev/disk2 (external, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                        *250.1 GB   disk2
-   1:           Windows Recovery                         554.7 MB   disk2s1
-   2:                        EFI NO NAME                 104.9 MB   disk2s2
-   3:         Microsoft Reserved                         16.8 MB    disk2s3
-   4:       Microsoft Basic Data                         249.4 GB   disk2s4
+   0:      GUID_partition_scheme                        *61.5 GB    disk2
+   1:                        EFI EFI                     209.7 MB   disk2s1
+   2:                  Apple_HFS Install macOS Mojave    61.2 GB    disk2s2
 
-/dev/disk3 (synthesized):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      APFS Container Scheme -                      +119.8 GB   disk3
-                                 Physical Store disk1s2
-   1:                APFS Volume macOS                   11.9 GB    disk3s1
-   2:                APFS Volume Preboot                 45.3 MB    disk3s2
-   3:                APFS Volume Recovery                509.7 MB   disk3s3
-   4:                APFS Volume VM                      20.5 KB    disk3s4
-
-Target volume /Volumes/macOS on disk3 is APFS on physical store disk1s2
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/macOS/EFIROOTDIR/EFI folder to /Volumes/macOS/EFI-Backups/r4972/2019-07-10-04h36/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
-Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
-Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/Install macOS Mojave
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/Install macOS Mojave
+======================================================
+Installing RC Scripts
 
-Removing drivers64UEFI/SMCHelper-64.efi driver because VirtualSMC driver present
+Installing RC scripts on target volume '/Volumes/Install macOS Mojave'
 
+
+Theme 'Clovy' (defined in config.plist) not found !
 Using default theme 'embedded'
 ======================================================
 =========== Clover EFI Installation Finish ===========
