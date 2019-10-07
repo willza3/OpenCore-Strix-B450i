@@ -1,9 +1,11 @@
 <img src="https://ibin.co/4wROyHBs3PAE.png" width="383" height="46"/>
 
-⚠️ **OpenCore is early in development. This configuration may be unstable.**
+⚠️ **OpenCore is currently in early development. This configuration may be unstable.**
+
+🍀 **Looking for [Clover?](https://github.com/willza3/macOS-strix-B450i/tree/master)**
 
 ## What is OpenCore?
-OpenCore is an alternative to Clover. By design, OpenCore is versatile by being more modular and open as it aims to resolve the constraints and issues that Clover brings. It is not only for Hackintoshes as it can be used for other purposes that require an emulated EFI. Please remember we’re still in very early infancy so there will be issues. This specific guide will be omitting Vault.plist and Vault.sig as there's still quite a bit of development happening there. OpenCore should be considered in Alpha stage at this time. If you have a working, stable system you should not migrate unless you prefer "bleeding edge" development, want to contribute, and don't mind recovering your system should it fail to boot.
+OpenCore is an alternative to the Clover bootloader. By design, OpenCore is versatile by being more modular and open as it aims to resolve the constraints and issues that Clover brings. Please remember we’re still in very early infancy so there will be issues. OpenCore should be considered in Alpha stage at this time. If you have a working, stable system you should not migrate unless you prefer "bleeding edge" development, want to contribute, and don't mind recovering your system should it fail to boot.
 
 ## System Specifications
 
@@ -32,4 +34,4 @@ OpenCore is an alternative to Clover. By design, OpenCore is versatile by being 
 
 - TBD
 
-*27 September, 2019*
+*7 October, 2019*
