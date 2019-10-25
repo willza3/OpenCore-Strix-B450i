@@ -1,174 +1,174 @@
-82:276  30:409  Found BIOS RSDP at F0010
-82:276  0:000  Printing ACPI tables from RSDP F0010 ...
-82:276  0:000   F0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
-82:276  0:000    (Xsdt: DB4190B0, Rsdt: DB419028)
-82:276  0:000    DB4190B0: 'XSDT', 'A M I', Rev: 1, Len: 212
-82:276  0:000    DB419028: 'RSDT', 'A M I', Rev: 1, Len: 124
-82:276  0:000    Tables in Xsdt: 22
-82:276  0:000    0. DB426D40: 'FACP', 'A M I', Rev: 6, Len: 276
-82:276  0:000        (Dsdt: DB419218, Facs: DB9CBD80, XDsdt: DB419218, XFacs: 0)
-82:276  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
-82:277  0:001        DB9CBD80: 'FACS', Ver: 2, Len: 64
-82:277  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
-82:277  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
-82:277  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
-82:277  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
-82:277  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
-82:277  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
-82:277  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
-82:277  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
-82:277  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
-82:277  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
-82:277  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
-82:277  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
-82:277  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
-82:277  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
-82:277  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
-82:277  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
-82:277  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
-82:277  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
-82:277  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
-82:277  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
-82:277  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
-82:277  0:000    Tables in Rsdt: 22
-82:277  0:000    0. DB419190: 'FACP', 'A M I', Rev: 2, Len: 132
-82:277  0:000        (Dsdt: DB419218, Facs: DB9CBD40)
-82:277  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
-82:279  0:001        DB9CBD40: 'FACS', Ver: 0, Len: 64
-82:279  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
-82:279  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
-82:279  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
-82:279  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
-82:279  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
-82:279  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
-82:279  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
-82:279  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
-82:279  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
-82:279  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
-82:279  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
-82:279  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
-82:279  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
-82:279  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
-82:279  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
-82:279  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
-82:279  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
-82:279  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
-82:279  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
-82:279  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
-82:279  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
-82:279  0:000  Found UEFI Acpi 2.0 RSDP at DB419000
-82:279  0:000  Saving ACPI tables from RSDP DB419000 to EFI\CLOVER\ACPI\origin ...
-82:279  0:000   DB419000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
-82:279  0:000    (Xsdt: DB4190B0, Rsdt: DB419028)
-82:279  0:000    DB4190B0: 'XSDT', 'A M I', Rev: 1, Len: 212
-82:279  0:000    DB419028: 'RSDT', 'A M I', Rev: 1, Len: 124
-82:279  0:000    Tables in Xsdt: 22
-82:279  0:000    0. DB426D40: 'FACP', 'A M I', Rev: 6, Len: 276
-82:279  0:000        (Dsdt: DB419218, Facs: DB9CBD80, XDsdt: DB419218, XFacs: 0)
-82:279  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
-82:280  0:001        DB9CBD80: 'FACS', Ver: 2, Len: 64
-82:280  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
-82:280  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
-82:280  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
-82:280  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
-82:280  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
-82:280  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
-82:280  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
-82:280  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
-82:280  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
-82:280  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
-82:280  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
-82:280  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
-82:280  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
-82:280  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
-82:280  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
-82:280  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
-82:280  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
-82:280  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
-82:280  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
-82:280  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
-82:280  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
-82:280  0:000    Tables in Rsdt: 22
-82:280  0:000    0. DB419190: 'FACP', 'A M I', Rev: 2, Len: 132
-82:280  0:000        (Dsdt: DB419218, Facs: DB9CBD40)
-82:280  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
-82:281  0:001        DB9CBD40: 'FACS', Ver: 0, Len: 64
-82:281  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
-82:281  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
-82:281  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
-82:281  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
-82:281  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
-82:281  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
-82:281  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
-82:281  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
-82:281  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
-82:281  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
-82:281  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
-82:281  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
-82:281  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
-82:281  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
-82:281  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
-82:281  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
-82:281  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
-82:281  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
-82:281  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
-82:281  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
-82:281  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
-82:281  0:000  Found UEFI Acpi 1.0 RSDP at DB419000
-82:281  0:000  Printing ACPI tables from RSDP DB419000 ...
-82:281  0:000   DB419000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
-82:281  0:000    (Xsdt: DB4190B0, Rsdt: DB419028)
-82:281  0:000    DB4190B0: 'XSDT', 'A M I', Rev: 1, Len: 212
-82:281  0:000    DB419028: 'RSDT', 'A M I', Rev: 1, Len: 124
-82:281  0:000    Tables in Xsdt: 22
-82:281  0:000    0. DB426D40: 'FACP', 'A M I', Rev: 6, Len: 276
-82:281  0:000        (Dsdt: DB419218, Facs: DB9CBD80, XDsdt: DB419218, XFacs: 0)
-82:281  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
-82:282  0:001        DB9CBD80: 'FACS', Ver: 2, Len: 64
-82:282  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
-82:282  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
-82:282  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
-82:282  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
-82:282  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
-82:282  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
-82:282  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
-82:282  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
-82:282  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
-82:282  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
-82:282  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
-82:282  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
-82:282  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
-82:282  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
-82:282  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
-82:282  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
-82:282  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
-82:282  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
-82:282  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
-82:282  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
-82:282  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
-82:282  0:000    Tables in Rsdt: 22
-82:282  0:000    0. DB419190: 'FACP', 'A M I', Rev: 2, Len: 132
-82:282  0:000        (Dsdt: DB419218, Facs: DB9CBD40)
-82:282  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
-82:283  0:001        DB9CBD40: 'FACS', Ver: 0, Len: 64
-82:283  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
-82:283  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
-82:283  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
-82:283  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
-82:283  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
-82:283  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
-82:283  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
-82:283  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
-82:283  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
-82:283  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
-82:283  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
-82:283  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
-82:283  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
-82:283  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
-82:283  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
-82:283  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
-82:283  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
-82:283  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
-82:283  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
-82:283  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
-82:283  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
+3:219  1:917  Found BIOS RSDP at F0010
+3:219  0:000  Printing ACPI tables from RSDP F0010 ...
+3:219  0:000   F0010: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+3:219  0:000    (Xsdt: DB4190B0, Rsdt: DB419028)
+3:219  0:000    DB4190B0: 'XSDT', 'A M I', Rev: 1, Len: 212
+3:219  0:000    DB419028: 'RSDT', 'A M I', Rev: 1, Len: 124
+3:219  0:000    Tables in Xsdt: 22
+3:219  0:000    0. DB426D40: 'FACP', 'A M I', Rev: 6, Len: 276
+3:219  0:000        (Dsdt: DB419218, Facs: DB9CBD80, XDsdt: DB419218, XFacs: 0)
+3:219  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
+3:220  0:001        DB9CBD80: 'FACS', Ver: 2, Len: 64
+3:220  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
+3:220  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
+3:220  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
+3:220  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
+3:220  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
+3:220  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
+3:220  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
+3:220  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
+3:220  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
+3:220  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
+3:220  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
+3:220  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
+3:220  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
+3:220  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
+3:220  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
+3:220  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
+3:220  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
+3:220  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
+3:220  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
+3:220  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
+3:220  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
+3:220  0:000    Tables in Rsdt: 22
+3:220  0:000    0. DB419190: 'FACP', 'A M I', Rev: 2, Len: 132
+3:220  0:000        (Dsdt: DB419218, Facs: DB9CBD40)
+3:220  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
+3:221  0:001        DB9CBD40: 'FACS', Ver: 0, Len: 64
+3:221  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
+3:221  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
+3:221  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
+3:221  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
+3:221  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
+3:221  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
+3:221  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
+3:221  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
+3:221  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
+3:221  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
+3:221  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
+3:221  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
+3:221  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
+3:221  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
+3:221  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
+3:221  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
+3:221  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
+3:221  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
+3:221  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
+3:221  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
+3:221  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
+3:221  0:000  Found UEFI Acpi 2.0 RSDP at DB419000
+3:221  0:000  Saving ACPI tables from RSDP DB419000 to EFI\CLOVER\ACPI\origin ...
+3:221  0:000   DB419000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36 -> RSDP.aml
+3:266  0:045    (Xsdt: DB4190B0, Rsdt: DB419028)
+3:266  0:000    DB4190B0: 'XSDT', 'A M I', Rev: 1, Len: 212 -> XSDT.aml
+3:297  0:030    DB419028: 'RSDT', 'A M I', Rev: 1, Len: 124 -> RSDT.aml
+3:328  0:030    Tables in Xsdt: 22
+3:328  0:000    0. DB426D40: 'FACP', 'A M I', Rev: 6, Len: 276 -> FACP.aml
+3:356  0:028        (Dsdt: DB419218, Facs: DB9CBD80, XDsdt: DB419218, XFacs: 0)
+3:356  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104 -> DSDT.aml
+3:399  0:043        DB9CBD80: 'FACS', Ver: 2, Len: 64 -> FACS.aml
+3:426  0:026    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350 -> APIC.aml
+3:458  0:032    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68 -> FPDT.aml
+3:484  0:025    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156 -> FIDT.aml
+3:509  0:025    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96 -> SSDT-0-CPUSSDT.aml
+3:541  0:031    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529 -> SSDT-1-AmdTable.aml
+3:568  0:026    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423 -> SSDT-2-AMD AOD.aml
+3:594  0:026    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60 -> MCFG.aml
+3:620  0:025    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271 -> SSDT-3-AmdTable.aml
+3:663  0:043    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56 -> HPET.aml
+3:696  0:032    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66 -> UEFI.aml
+3:737  0:041    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548 -> VFCT.aml
+3:770  0:033    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56 -> BGRT.aml
+3:809  0:038    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60 -> WPBT.aml
+3:839  0:030    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696 -> SSDT-4-AMD CPU.aml
+3:880  0:041    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064 -> CRAT.aml
+3:922  0:041    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41 -> CDIT.aml
+3:963  0:040    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80 -> SSDT-5-AmdTable.aml
+3:996  0:032    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268 -> SSDT-6-AmdTable.aml
+4:035  0:039    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324 -> SSDT-7-AmdTable.aml
+4:067  0:032    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397 -> SSDT-8-AmdTable.aml
+4:104  0:037    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191 -> SSDT-9-AMD PT.aml
+4:143  0:039    Tables in Rsdt: 22
+4:143  0:000    0. DB419190: 'FACP', 'A M I', Rev: 2, Len: 132 -> RSDT-FACP.aml
+4:191  0:047        (Dsdt: DB419218, Facs: DB9CBD40)
+4:191  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
+4:192  0:001        DB9CBD40: 'FACS', Ver: 0, Len: 64 -> RSDT-FACS.aml
+4:232  0:039    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
+4:232  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
+4:232  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
+4:232  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
+4:232  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
+4:232  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
+4:232  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
+4:232  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
+4:232  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
+4:232  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
+4:232  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
+4:232  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
+4:232  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
+4:232  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
+4:232  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
+4:232  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
+4:232  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
+4:232  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
+4:232  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
+4:232  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
+4:232  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
+4:232  0:000  Found UEFI Acpi 1.0 RSDP at DB419000
+4:232  0:000  Printing ACPI tables from RSDP DB419000 ...
+4:232  0:000   DB419000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+4:232  0:000    (Xsdt: DB4190B0, Rsdt: DB419028)
+4:232  0:000    DB4190B0: 'XSDT', 'A M I', Rev: 1, Len: 212
+4:232  0:000    DB419028: 'RSDT', 'A M I', Rev: 1, Len: 124
+4:232  0:000    Tables in Xsdt: 22
+4:232  0:000    0. DB426D40: 'FACP', 'A M I', Rev: 6, Len: 276
+4:232  0:000        (Dsdt: DB419218, Facs: DB9CBD80, XDsdt: DB419218, XFacs: 0)
+4:232  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
+4:233  0:001        DB9CBD80: 'FACS', Ver: 2, Len: 64
+4:233  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
+4:233  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
+4:233  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
+4:233  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
+4:233  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
+4:233  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
+4:233  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
+4:233  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
+4:233  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
+4:233  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
+4:233  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
+4:233  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
+4:233  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
+4:233  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
+4:233  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
+4:233  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
+4:233  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
+4:233  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
+4:233  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
+4:233  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
+4:233  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
+4:233  0:000    Tables in Rsdt: 22
+4:233  0:000    0. DB419190: 'FACP', 'A M I', Rev: 2, Len: 132
+4:233  0:000        (Dsdt: DB419218, Facs: DB9CBD40)
+4:233  0:000        DB419218: 'DSDT', 'A M I', Rev: 2, Len: 56104
+4:234  0:001        DB9CBD40: 'FACS', Ver: 0, Len: 64
+4:234  0:000    1. DB426E58: 'APIC', 'A M I', Rev: 3, Len: 350
+4:234  0:000    2. DB426FB8: 'FPDT', 'A M I', Rev: 1, Len: 68
+4:234  0:000    3. DB427000: 'FIDT', 'A M I', Rev: 1, Len: 156
+4:234  0:000    4. DB4270A0: 'SSDT', 'CPUSSDT', Rev: 2, Len: 96
+4:234  0:000    5. DB427100: 'SSDT', 'AmdTable', Rev: 2, Len: 21529
+4:234  0:000    6. DB42C520: 'SSDT', 'AMD AOD', Rev: 1, Len: 12423
+4:234  0:000    7. DB42F5A8: 'MCFG', 'A M I', Rev: 1, Len: 60
+4:234  0:000    8. DB442678: 'SSDT', 'AmdTable', Rev: 1, Len: 4271
+4:234  0:000    9. DB42F640: 'HPET', 'A M I', Rev: 1, Len: 56
+4:234  0:000    10. DB42F678: 'UEFI', 'A M I', Rev: 1, Len: 66
+4:234  0:000    11. DB42F6C0: 'VFCT', 'A M I', Rev: 1, Len: 60548
+4:234  0:000    12. DB43E348: 'BGRT', 'A M I', Rev: 1, Len: 56
+4:234  0:000    13. DB43E380: 'WPBT', 'A M I', Rev: 1, Len: 60
+4:234  0:000    14. DB43E3C0: 'SSDT', 'AMD CPU', Rev: 1, Len: 1696
+4:234  0:000    15. DB43EA60: 'CRAT', 'AMD CRAT', Rev: 1, Len: 2064
+4:234  0:000    16. DB43F270: 'CDIT', 'AMD CDIT', Rev: 1, Len: 41
+4:234  0:000    17. DB43F2A0: 'SSDT', 'AmdTable', Rev: 1, Len: 80
+4:234  0:000    18. DB43F2F0: 'SSDT', 'AmdTable', Rev: 1, Len: 4268
+4:234  0:000    19. DB4403A0: 'SSDT', 'AmdTable', Rev: 1, Len: 1324
+4:234  0:000    20. DB4408D0: 'SSDT', 'AmdTable', Rev: 1, Len: 7397
+4:234  0:000    21. DB4425B8: 'SSDT', 'AMD PT', Rev: 1, Len: 191
