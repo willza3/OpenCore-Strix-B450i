@@ -6,7 +6,7 @@
  <img src="https://ibin.co/4wWyAVkKNTUv.png" width="383" height="46"/>
 </p>
 
-Tested with macOS Mojave 10.14.6 Supplemental Update 2 (18G103). iCloud, iMessage, FaceTime and Siri are fully functional, flush a new SMBIOS if you decide to use this configuration. iMac 14,2 or iMacPro1,1 work best.
+Tested with macOS Catalina 10.15, but should work with Mojave. iCloud, iMessage, FaceTime and Siri are all fully functional but flush a new SMBIOS if you decide to use this configuration. iMac 14,2 or iMacPro1,1 work best.
 
 ## System Specifications
 
@@ -21,16 +21,17 @@ Tested with macOS Mojave 10.14.6 Supplemental Update 2 (18G103). iCloud, iMessag
 
 ## BIOS Settings
 
-For best results, load optimised defaults - BIOS Version 2301 (19/04/2019)
+For best results, load optimised defaults - BIOS Version 2801 (24/09/2019)
 
-- SVM Mode -> Disabled
+- SVM Mode -> Disabled (Can be enabled post-install)
 - SATA Mode -> AHCI
 - IOMMU -> Disabled
 - XHCI Hand-off -> Enabled
 - Boot\CSM -> Disabled
 - Secure Boot -> Other OS
 
-**Using a Ryzen G CPU?** Disable CPB to help minimise audio distortion.
+**Ryzen G CPU?** Disable CPB to help minimise against audio issues.
+
 - Core Performance Boost -> Disabled
 
 ## Guides & Links
@@ -48,8 +49,9 @@ For best results, load optimised defaults - BIOS Version 2301 (19/04/2019)
 
 - Internal WiFi & Bluetooth are non-functional.
 
-- 32-Bit apps don't open. (Non-issue as Apple stops supporting them in October 2019.)
+- FileVault can cause issues.
 
-*28 September, 2019*
+*25 October, 2019*
 
 ☘️
+	
