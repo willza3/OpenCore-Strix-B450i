@@ -8,6 +8,8 @@
 
 Tested with macOS Catalina 10.15, but should work with Mojave. iCloud, iMessage, FaceTime and Siri are all fully functional but flush a new SMBIOS if you decide to use this configuration. iMac 14,2 or iMacPro1,1 work best.
 
+🌀 **Looking for [OpenCore?](https://github.com/willza3/macOS-strix-B450i/tree/OpenCore)**
+
 ## System Specifications
 
 - **Motherboard:** Asus ROG Strix B450-I
@@ -51,7 +53,7 @@ For best results, load optimised defaults - BIOS Version 2801 (24/09/2019)
 
 - FileVault can cause issues.
 
-*25 October, 2019*
+*8 November, 2019*
 
 ☘️
 	
