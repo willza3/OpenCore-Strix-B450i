@@ -1,6 +1,6 @@
 <img src="https://ibin.co/4wROyHBs3PAE.png" width="383" height="46"/>
 
-⚠️ **OpenCore is currently in early development. This configuration may be unstable.**
+⚠️ **OpenCore is currently in early development. This configuration may have issues.**
 
 🍀 **Looking for [Clover?](https://github.com/willza3/macOS-strix-B450i/tree/master)**
 
@@ -18,6 +18,21 @@ OpenCore is an alternative to the Clover bootloader. By design, OpenCore is vers
 
 - **GPU:** Sapphire Nitro+ Radeon RX 580 8GB
 
+## BIOS Settings
+
+For best results, load optimised defaults - BIOS Version 2801 (24/09/2019)
+
+- SVM Mode -> Disabled (Can be enabled post-install)
+- SATA Mode -> AHCI
+- IOMMU -> Disabled
+- XHCI Hand-off -> Enabled
+- Boot\CSM -> Disabled
+- Secure Boot -> Other OS
+
+**Ryzen G CPU?** Disable CPB to help minimise against audio issues.
+
+- Core Performance Boost -> Disabled
+
 ## Guides & Links
 
 #### Guides
@@ -26,12 +41,17 @@ OpenCore is an alternative to the Clover bootloader. By design, OpenCore is vers
 
 #### Links
 
-- [OpenCore](https://github.com/acidanthera/OpenCorePkg)
+- [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)
 - [OpenCore EFI Builder (Make sure to read the wiki)](https://github.com/rusty-bits/OC-tool)
+- [Kext Repo](https://1drv.ms/f/s!AiP7m5LaOED-m-J8-MLJGnOgAqnjGw)
 
 
 ## Known Issues
 
-- TBD
+- Internal WiFi & Bluetooth are non-functional.
 
-*7 October, 2019*
+- FileVault *un-tested.*
+
+*8 November, 2019*
+
+🌀
