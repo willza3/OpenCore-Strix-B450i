@@ -1354,7 +1354,7 @@
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
-			<string></string>
+			<string>Graphics</string>
 			<key>ConsoleBehaviourUi</key>
 			<string></string>
 			<key>ConsoleMode</key>
@@ -1574,7 +1574,7 @@
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>ConsoleControl</key>
-			<false/>
+			<true/>
 			<key>DataHub</key>
 			<false/>
 			<key>DeviceProperties</key>
@@ -1597,7 +1597,7 @@
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>IgnoreTextInGraphics</key>
-			<false/>
+			<true/>
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReconnectOnResChange</key>
@@ -1609,7 +1609,7 @@
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>SanitiseClearScreen</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 </dict>
