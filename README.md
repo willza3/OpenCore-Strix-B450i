@@ -10,6 +10,8 @@ Tested with macOS Catalina 10.15, but should work with Mojave. iCloud, iMessage,
 
 🌀 **Looking for [OpenCore?](https://github.com/willza3/macOS-strix-B450i/tree/OpenCore)**
 
+🌅 **This configuration will no longer be maintained in January 2020. Consider moving to OpenCore.**
+
 ## System Specifications
 
 - **Motherboard:** Asus ROG Strix B450-I
