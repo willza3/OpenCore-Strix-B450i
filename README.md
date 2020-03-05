@@ -68,7 +68,7 @@ For best results, load optimised defaults - BIOS Version 2801 (24/09/2019)
 
 - FileVault 2 should be properly supported as of early February 2020 builds, but **has not been properly tested.**
 
-*4 February, 2020*
+*4 March, 2020*
 
 🌀
 	
