@@ -10,7 +10,7 @@
 
 🔔 **Join the Telegram [Channel](https://t.me/macOSstrixB450i) for the latest updates.**      
 
-Tested with macOS Catalina 10.15.3, but expected to work with Mojave 10.14. This configuration uses OpenCore 0.5.6 - any later releases of OpenCore have not yet been tested so use at your own risk.
+Tested with macOS Catalina 10.15.4, but expected to work with Mojave 10.14. This configuration uses OpenCore 0.5.6 - any later releases of OpenCore have not yet been tested so use at your own risk.
 
 This configuration works out the box with iCloud services, but it's **highly reccomended to [flush a new SMBIOS.](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/amd-config.plist/amd-config#platforminfo)** Using the included SMBIOS could result in a blacklisted or permanently banned Apple ID.
 
