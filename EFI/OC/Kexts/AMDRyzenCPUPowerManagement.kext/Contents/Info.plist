@@ -7,23 +7,23 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>SMCAMDProcessor</string>
+	<string>AMDRyzenCPUPowerManagement</string>
 	<key>CFBundleIdentifier</key>
-	<string>wtf.spinach.SMCAMDProcessor</string>
+	<string>wtf.spinach.AMDRyzenCPUPowerManagement</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>SMCAMDProcessor</string>
+	<string>AMDRyzenCPUPowerManagement</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>0.6</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>0.6</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -40,22 +40,35 @@
 	<string>11E146</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>wtf.spinach.SMCAMDProcessor</key>
+		<key>wtf.spinach.AMDRyzenCPUPowerManagement</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>wtf.spinach.SMCAMDProcessor</string>
+			<string>wtf.spinach.AMDRyzenCPUPowerManagement</string>
 			<key>IOClass</key>
-			<string>SMCAMDProcessor</string>
-			<key>IOMatchCategory</key>
-			<string>SMCAMDProcessor</string>
-			<key>IOProviderClass</key>
 			<string>AMDRyzenCPUPowerManagement</string>
+			<key>IOMatchCategory</key>
+			<string>AMDRyzenCPUPowerManagement</string>
+			<key>IONameMatch</key>
+			<string>processor</string>
+			<key>IOPropertyMatch</key>
+			<dict>
+				<key>processor-index</key>
+				<integer>0</integer>
+			</dict>
+			<key>IOProviderClass</key>
+			<string>IOACPIPlatformDevice</string>
+			<key>IOResourceMatch</key>
+			<string>ACPI</string>
+			<key>IOUserClientClass</key>
+			<string>AMDRyzenCPUPMUserClient</string>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.13</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 trulyspinach. All rights reserved.</string>
+	<key>OSBundleCompatibleVersion</key>
+	<string>0.6</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>as.vit9696.Lilu</key>
@@ -78,8 +91,8 @@
 		<string>12.0.0</string>
 		<key>com.apple.kpi.unsupported</key>
 		<string>12.0.0</string>
-		<key>wtf.spinach.AMDRyzenCPUPowerManagement</key>
-		<string>0.6</string>
 	</dict>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
 </dict>
 </plist>
