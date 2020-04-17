@@ -8,67 +8,71 @@
 
 ⚠️ **OpenCore is still in beta. Please keep this in mind.**
 
-🔔 **Join the Telegram [Channel](https://t.me/macOSstrixB450i) for the latest updates.**      
+🛎 **Join the Telegram [Channel](https://t.me/macOSstrixB450i) for notifications about updates.**
 
-Tested with macOS Catalina 10.15.4, but expected to work with Mojave 10.14. This configuration uses OpenCore 0.5.6 - any later releases of OpenCore have not yet been tested so use at your own risk.
+Tested with macOS 10.15.4 SU1 with OpenCore 0.5.7 - any later versions of macOS and OpenCore have not yet been tested, so use them at your own risk. This configuration works with iCloud services, but it's **strongly recommended** to [flush a new SMBIOS.](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) Using the included one could result in a permanently banned Apple ID, which I can't be held responsible for.
 
-This configuration works out the box with iCloud services, but it's **highly reccomended to [flush a new SMBIOS.](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/amd-config.plist/amd-config#platforminfo)** Using the included SMBIOS could result in a blacklisted or permanently banned Apple ID.
+## System Specification
 
-## What is OpenCore?
-OpenCore is an open-source unconventional first-in-class piece of software designed to intercept kernel loading to insert a highly advanced rootkit, designed to be an alternative to Clover. OpenCore aims to resolve the constraints and issues imposed by Clover by providing a more versatile and modular system. While OpenCore is primarily designed for Hackintosh systems, it can be used in any scenario where an emulated EFI is needed.
+* **Motherboard:** ASUS ROG Strix B450-I
+	* Networking: Intel I211-AT
+	* Audio: SupremeFX S1220A (ALC Layout 7)
+	* Wireless: Realtek 8822BE (Stock)
 
-— From the OpenCore Vanilla Guide
+* **CPU:** AMD Ryzen 5 2600X
+* **GPU:** Sapphire Nitro+ Radeon RX 580 8GB
 
-## System Specifications
+Dual-booted with Windows 10. OpenCore installed on macOS SSD and set as primary boot device for OpenCanopy.
 
-- **Motherboard:** Asus ROG Strix B450-I
-  * Networking: Intel I211-AT
-  * Audio Codec: SupremeFX S1220A (Layout 7)
-  * Wireless: Realtek 8822BE
-  
-- **CPU:** AMD Ryzen 5 2600X
-- **GPU:** Sapphire Nitro+ Radeon RX 580 8GB
-    * Navi GPU? Add this boot flag: ```agdpmod=pikera```
 
 ## BIOS Settings
+**For the best results, load *optimised defaults* and change the following options;**
 
-For best results, load optimised defaults - BIOS Version 2801 (24/09/2019)
+* SVM Mode -> Disabled (Enable after install)
+* SATA Mode -> AHCI
+* IOMMU -> Disabled
+* XHCI Handoff -> Enabled
+* Boot/CSM -> Disabled
+* Secure Boot -> Other OS
 
-- SVM Mode -> Disabled (Can be enabled post-install)
-- SATA Mode -> AHCI
-- IOMMU -> Disabled
-- XHCI Hand-off -> Enabled
-- Boot\CSM -> Disabled
-- Secure Boot -> Other OS
+**Ryzen G CPUs using integrated audio:**
 
-**Ryzen G CPU?** Disable CPB to help reduce audio issues on Ryzen G CPUs.
+* Core Performance Boost -> Disabled
 
-- Core Performance Boost -> Disabled
+These settings were tested with BIOS v2801 (24/09/2019) - use the latest available version of your BIOS to mitigate any issues (in general).
+
+## Known Issues
+
+* **Internal WiFi & Bluetooth are not supported by macOS.**
+
+Solution: The internal wireless card can be replaced with a compatible one, such as the Dell DW1820A. I haven't tried this myself, but there are reports of it working...
+
+* **Watching DRM Video (e.g Netflix) can cause a kernel panic when using Safari.**
+
+Solution: Using a different browser, like Firefox, doesn't trigger this issue. I haven't tested this with Apple TV+ yet.
 
 ## Guides & Links
 
 #### Guides
-- [OpenCore Vanilla Desktop Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/)
-- [Catalina GPU Guide](https://khronokernel-3.gitbook.io/catalina-gpu-buyers-guide/)
-- [Snazzy Labs' OpenCore Guide](https://youtu.be/l_QPLl81GrY)
+
+* [OpenCore Vanilla Desktop Guide](https://dortania.github.io/OpenCore-Desktop-Guide)
+
+* [Catalina GPU Guide](https://khronokernel-3.gitbook.io/catalina-gpu-buyers-guide/)
+
+* [Snazzy Labs' OpenCore Guide](https://youtu.be/l_QPLl81GrY)
 
 #### Links
 
-- [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)
-- [Kext Repo](https://1drv.ms/f/s!AiP7m5LaOED-m-J8-MLJGnOgAqnjGw)
-- [CPU Name](https://github.com/corpnewt/CPU-Name)
-- [OpenCore Sanity Checker](https://opencore.slowgeek.com)
+* [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg)
 
+* [OpenCore Sanity Checker](https://opencore.slowgeek.com)
 
-## Known Issues
+#### Apps
 
-- Internal WiFi & Bluetooth are not supported.
+* [AMD Power Gadget](https://github.com/trulyspinach/SMCAMDProcessor/releases)
 
-- Watching DRM-Protected Video (e.g Netflix) with Safari can cause a kernel panic.
+* [External­Display­Brightness](https://github.com/fnesveda/ExternalDisplayBrightness/releases)
 
-- FileVault 2 should be properly supported as of early February 2020 builds, but **has not been properly tested.**
-
-*4 March, 2020*
+*17 April, 2020*
 
 🌀
-	
