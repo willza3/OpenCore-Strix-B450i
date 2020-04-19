@@ -6,56 +6,41 @@
  <img src="https://ibin.co/4wWyAVkKNTUv.png" width="383" height="46"/>
 </p>
 
-Tested with macOS Catalina 10.15, but should work with Mojave. iCloud, iMessage, FaceTime and Siri are all fully functional but flush a new SMBIOS if you decide to use this configuration. iMac 14,2 or iMacPro1,1 work best.
 
-🌀 **Looking for [OpenCore?](https://github.com/willza3/macOS-strix-B450i/tree/OpenCore)**
+🌀 **This project is now based on [OpenCore.](https://github.com/willza3/macOS-strix-B450i/tree/OpenCore)**
 
-🌅 **This configuration will no longer be maintained in January 2020. Consider moving to OpenCore.**
+🌅 **This branch has not been updated since October 2019.**
 
-## System Specifications
+Last tested working with **macOS 10.15.0**, newer versions of macOS haven't been tested and will very likely require extra fixes/patches. This branch is purely here for reference, feel free to fork this if you'd like to make it compatible with newer versions of macOS!
 
-- **Motherboard:** Asus ROG Strix B450-I
-  * Networking: Intel I211-AT
-  * Audio Codec: ROG SupremeFX (S1220A)
-  * Wireless: Asus WiFi GO!
-  
-- **CPU:** AMD Ryzen 3 2200G @ 3.5 GHz (Temporary)
+## System Specification
 
-- **GPU:** Sapphire Nitro+ Radeon RX 580 8GB
+* **Motherboard:** ASUS ROG Strix B450-I
+	* Networking: Intel I211-AT
+	* Audio: SupremeFX S1220A (ALC Layout 7)
+	* Wireless: Realtek 8822BE (Stock)
+
+* **CPU:** AMD Ryzen 5 2600X
+* **GPU:** Sapphire Nitro+ Radeon RX 580 8GB
 
 ## BIOS Settings
+**For the best results, load *optimised defaults* and change the following options;**
 
-For best results, load optimised defaults - BIOS Version 2801 (24/09/2019)
+* SVM Mode -> Disabled (Enable after install)
+* SATA Mode -> AHCI
+* IOMMU -> Disabled
+* XHCI Handoff -> Enabled
+* Boot/CSM -> Disabled
+* Secure Boot -> Other OS
 
-- SVM Mode -> Disabled (Can be enabled post-install)
-- SATA Mode -> AHCI
-- IOMMU -> Disabled
-- XHCI Hand-off -> Enabled
-- Boot\CSM -> Disabled
-- Secure Boot -> Other OS
+**Ryzen G CPUs using integrated audio:**
 
-**Ryzen G CPU?** Disable CPB to help minimise against audio issues.
+* Core Performance Boost -> Disabled
 
-- Core Performance Boost -> Disabled
+These settings were tested with BIOS v2801 (24/09/2019) - use the latest available version of your BIOS to mitigate any issues (in general).
 
-## Guides & Links
+*Revised: 19 April, 2020*
 
-#### Guides
-- [AIO Vanilla Hackintosh Guide](https://kb.hackintoshisfun.ml/clover/)
-- [GPU Guide (Great for determining GPU settings)](https://khronokernel-3.gitbook.io/catalina-gpu-buyers-guide/)
+*Last configuration update: 13 October, 2019*
 
-#### Links
-- [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
-- [Kext Repo](https://1drv.ms/f/s!AiP7m5LaOED-m-J8-MLJGnOgAqnjGw)
-- [Set busratio, CPU and Bus speeds](https://forum.amd-osx.com/viewtopic.php?t=3440)
-
-## Known Issues
-
-- Internal WiFi & Bluetooth are non-functional.
-
-- FileVault can cause issues.
-
-*8 November, 2019*
-
-☘️
-	
+🍀
