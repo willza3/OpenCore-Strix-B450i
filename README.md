@@ -47,10 +47,6 @@ These settings were tested with BIOS v2801 (24/09/2019) - use the latest availab
 
 Solution: The internal wireless card can be replaced with a compatible one, such as the Dell DW1820A. I haven't tried this myself, but there are reports of it working...
 
-* **Watching DRM Video (e.g Netflix) can cause a kernel panic when using Safari.**
-
-Solution: Using a different browser, like Firefox, doesn't trigger this issue. I haven't tested this with Apple TV+ yet.
-
 ## Guides & Links
 
 #### Guides
@@ -73,6 +69,6 @@ Solution: Using a different browser, like Firefox, doesn't trigger this issue. I
 
 * [External­Display­Brightness](https://github.com/fnesveda/ExternalDisplayBrightness/releases)
 
-*17 April, 2020*
+*19 April, 2020*
 
 🌀
