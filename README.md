@@ -45,7 +45,11 @@ These settings were tested with BIOS v2801 (24/09/2019) - use the latest availab
 
 * **Internal WiFi & Bluetooth are not supported by macOS.**
 
-Solution: The internal wireless card can be replaced with a compatible one, such as the Dell DW1820A. I haven't tried this myself, but there are reports of it working...
+Solution: The internal wireless card can be replaced with a macOS compatible one (e.g Dell DW1820A). I haven't tried this myself, but there are reports of it working.
+
+* **Line-in microphones may not appear**
+
+Solution: AppleALC has minimal support for line-in microphones on Ryzen/TR CPUs. [VoodooHDA](https://sourceforge.net/projects/voodoohda/)supposedly has better support (at the cost of audio quality) for this but I can't test this myself.
 
 ## Guides & Links
 
@@ -69,6 +73,6 @@ Solution: The internal wireless card can be replaced with a compatible one, such
 
 * [External­Display­Brightness](https://github.com/fnesveda/ExternalDisplayBrightness/releases)
 
-*19 April, 2020*
+*2 May, 2020*
 
 🌀
