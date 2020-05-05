@@ -10,7 +10,7 @@
 
 🛎 **Join the Telegram [Channel](https://t.me/macOSstrixB450i) for notifications about updates.**
 
-Tested with macOS 10.15.4 SU1 with OpenCore 0.5.7 - any later versions of macOS and OpenCore have not yet been tested, so use them at your own risk. This configuration works with iCloud services, but it's **strongly recommended** to [flush a new SMBIOS.](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) Using the included one could result in a permanently banned Apple ID, which I can't be held responsible for.
+Tested with macOS 10.15.4 SU1 with OpenCore 0.5.8 - any later versions of macOS and OpenCore have not yet been tested, so use them at your own risk. This configuration works with iCloud services, but it's **strongly recommended** to [flush a new SMBIOS.](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) Using the included one could result in a permanently banned Apple ID, which I can't be held responsible for.
 
 ## System Specification
 
@@ -45,11 +45,13 @@ These settings were tested with BIOS v2801 (24/09/2019) - use the latest availab
 
 * **Internal WiFi & Bluetooth are not supported by macOS.**
 
-Solution: The internal wireless card can be replaced with a macOS compatible one (e.g Dell DW1820A). I haven't tried this myself, but there are reports of it working.
+**Solution:** The internal wireless card can be replaced with a macOS compatible one (e.g Dell DW1820A). I haven't tried this myself, but there are reports of it working.
 
 * **Line-in microphones may not appear**
 
-Solution: AppleALC has minimal support for line-in microphones on Ryzen/TR CPUs. [VoodooHDA](https://sourceforge.net/projects/voodoohda/)supposedly has better support (at the cost of audio quality) for this but I can't test this myself.
+**Solution:** AppleALC has minimal support for line-in microphones on Ryzen/TR CPUs. [VoodooHDA](https://sourceforge.net/projects/voodoohda/) supposedly has better support (at the cost of audio quality) for this but I can't test this myself.
+
+**Please report any issues you find [here.](https://github.com/willza3/macOS-strix-B450i/issues)**
 
 ## Guides & Links
 
@@ -73,6 +75,6 @@ Solution: AppleALC has minimal support for line-in microphones on Ryzen/TR CPUs.
 
 * [External­Display­Brightness](https://github.com/fnesveda/ExternalDisplayBrightness/releases)
 
-*2 May, 2020*
+**Last Updated:** 5 May 2020
 
 🌀
