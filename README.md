@@ -28,18 +28,20 @@ Dual-booted with Windows 10. OpenCore installed on macOS SSD and set as primary 
 ## BIOS Settings
 **For the best results, load *optimised defaults* and change the following options;**
 
-* SVM Mode -> Disabled (Enable after install)
-* SATA Mode -> AHCI
-* IOMMU -> Disabled
-* XHCI Handoff -> Enabled
-* Boot/CSM -> Disabled
-* Secure Boot -> Other OS
+#### Boot
+
+* Fast Boot -> Disabled
+* CSM -> Launch CSM -> Disabled
+* Secure Boot -> OS Type -> Windows UEFI
+
+#### Advanced
+* USB Configuration -> XHCI Hand-off -> Enabled
 
 **Ryzen G CPUs using integrated audio:**
 
 * Core Performance Boost -> Disabled
 
-These settings were tested with BIOS v2801 (24/09/2019) - use the latest available version of your BIOS to mitigate any issues (in general).
+These settings were tested with BIOS v3004 (27/12/2019) - use the latest available version of your BIOS to mitigate any issues (in general).
 
 ## Known Issues
 
@@ -75,6 +77,6 @@ These settings were tested with BIOS v2801 (24/09/2019) - use the latest availab
 
 * [External­Display­Brightness](https://github.com/fnesveda/ExternalDisplayBrightness/releases)
 
-**Last Updated:** 5 May 2020
+**Last Updated:** 19 May 2020
 
 🌀
