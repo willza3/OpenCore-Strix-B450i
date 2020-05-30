@@ -10,7 +10,7 @@
 
 🛎 **Join the Telegram [Channel](https://t.me/macOSstrixB450i) for notifications about updates.**
 
-Tested with macOS 10.15.4 SU1 with OpenCore 0.5.8 - any later versions of macOS and OpenCore have not yet been tested, so use them at your own risk. This configuration works with iCloud services, but it's **strongly recommended** to [flush a new SMBIOS.](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) Using the included one could result in a permanently banned Apple ID, which I can't be held responsible for.
+Tested with macOS 10.15.5 with OpenCore 0.5.8 - any later versions of macOS and OpenCore have not yet been tested, so use them at your own risk. This configuration works with iCloud services, but it's **strongly recommended** to [flush a new SMBIOS.](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) Using the included one could result in a permanently banned Apple ID, which I can't be held responsible for.
 
 ## System Specification
 
@@ -51,7 +51,7 @@ These settings were tested with BIOS v3004 (27/12/2019) - use the latest availab
 
 * **Line-in microphones may not appear**
 
-**Solution:** AppleALC has minimal support for line-in microphones on Ryzen/TR CPUs. [VoodooHDA](https://sourceforge.net/projects/voodoohda/) supposedly has better support (at the cost of audio quality) for this but I can't test this myself.
+**Solution:** AppleALC has minimal support for line-in microphones on Ryzen/TR CPUs. Buying a USB adapter seems to be the best option at this time.
 
 **Please report any issues you find [here.](https://github.com/willza3/macOS-strix-B450i/issues)**
 
@@ -77,6 +77,6 @@ These settings were tested with BIOS v3004 (27/12/2019) - use the latest availab
 
 * [External­Display­Brightness](https://github.com/fnesveda/ExternalDisplayBrightness/releases)
 
-**Last Updated:** 19 May 2020
+**Last Updated:** 30 May 2020
 
 🌀
