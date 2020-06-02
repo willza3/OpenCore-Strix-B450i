@@ -10,7 +10,7 @@
 
 🛎 **Join the Telegram [Channel](https://t.me/macOSstrixB450i) for notifications about updates.**
 
-Tested with macOS 10.15.5 with OpenCore 0.5.8 - any later versions of macOS and OpenCore have not yet been tested, so use them at your own risk. This configuration works with iCloud services, but it's **strongly recommended** to [flush a new SMBIOS.](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) Using the included one could result in a permanently banned Apple ID, which I can't be held responsible for.
+Tested with macOS 10.15.5 SU with OpenCore 0.5.9 - any later versions of macOS and OpenCore have not yet been tested, so use them at your own risk. This configuration works with iCloud services, but it's **strongly recommended** to [flush a new SMBIOS.](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) Using the included one could result in a permanently banned Apple ID, which I can't be held responsible for.
 
 ## System Specification
 
@@ -77,6 +77,6 @@ These settings were tested with BIOS v3004 (27/12/2019) - use the latest availab
 
 * [External­Display­Brightness](https://github.com/fnesveda/ExternalDisplayBrightness/releases)
 
-**Last Updated:** 30 May 2020
+**Last Updated:** 2 June 2020
 
 🌀
