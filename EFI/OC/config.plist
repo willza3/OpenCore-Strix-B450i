@@ -8,20 +8,20 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-EC.aml</string>
+				<string>Embedded Controller Patch</string>
 				<key>Path</key>
-				<string>SSDT-EC.aml</string>
+				<string>SSDT-EC-USBX.aml</string>
 				<key>Enabled</key>
 				<true/>
 			</dict>
 		</array>
-		<key>Block</key>
+		<key>Delete</key>
 		<array>
 			<dict>
 				<key>All</key>
 				<false/>
 				<key>Comment</key>
-				<string>Drop CpuPm</string>
+				<string>Delete CpuPm</string>
 				<key>Enabled</key>
 				<false/>
 				<key>OemTableId</key>
@@ -35,7 +35,7 @@
 				<key>All</key>
 				<false/>
 				<key>Comment</key>
-				<string>Drop Cpu0Ist</string>
+				<string>Delete Cpu0Ist</string>
 				<key>Enabled</key>
 				<false/>
 				<key>OemTableId</key>
@@ -165,7 +165,7 @@
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
 			<key>SetupVirtualMap</key>
-			<false/>
+			<true/>
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
@@ -176,13 +176,13 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x3)</key>
+			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
-				<key>alc-layout-id</key>
+				<key>layout-id</key>
 				<data>BwAAAA==</data>
 			</dict>
 		</dict>
-		<key>Block</key>
+		<key>Delete</key>
 		<dict/>
 	</dict>
 	<key>Kernel</key>
@@ -233,22 +233,6 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AMDRyzenCPUPowerManagement</string>
-				<key>BundlePath</key>
-				<string>AMDRyzenCPUPowerManagement.kext</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-				<key>Enabled</key>
-				<true/>
-				<key>MinKernel</key>
-				<string></string>
-				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
@@ -281,13 +265,13 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/NVMeFix</string>
+				<string>Contents/MacOS/WhateverGreen</string>
 				<key>BundlePath</key>
-				<string>NVMeFix.kext</string>
+				<string>WhateverGreen.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>Power management features for Ryzen CPUs</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -297,9 +281,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/SMCAMDProcessor</string>
+				<string>Contents/MacOS/AMDRyzenCPUPowerManagement</string>
 				<key>BundlePath</key>
-				<string>SMCAMDProcessor.kext</string>
+				<string>AMDRyzenCPUPowerManagement.kext</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -319,7 +303,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string></string>
+				<string>VirtualSMC plugin for Ryzen sensor data</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -329,9 +313,9 @@
 				<key>MinKernel</key>
 				<string></string>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/WhateverGreen</string>
+				<string>Contents/MacOS/SMCAMDProcessor</string>
 				<key>BundlePath</key>
-				<string>WhateverGreen.kext</string>
+				<string>SMCAMDProcessor.kext</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -383,7 +367,7 @@
 			<key>PanicNoKextDump</key>
 			<true/>
 			<key>PowerTimeoutKernelPanic</key>
-			<true/>
+			<false/>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
@@ -1330,8 +1314,6 @@
 			<string>None</string>
 			<key>HideAuxiliary</key>
 			<true/>
-			<key>HideSelf</key>
-			<true/>
 			<key>PickerAttributes</key>
 			<integer>1</integer>
 			<key>PickerAudioAssist</key>
@@ -1345,20 +1327,24 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>5</integer>
+			<integer>4</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
 			<false/>
+			<key>ApplePanic</key>
+			<true/>
 			<key>DisableWatchDog</key>
 			<true/>
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
+			<key>SysReport</key>
+			<false/>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>67</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1385,8 +1371,10 @@
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
+			<key>BlacklistAppleUpdate</key>
+			<true/>
 			<key>BootProtect</key>
-			<string>None</string>
+			<string>Bootstrap</string>
 			<key>ExposeSensitiveData</key>
 			<integer>8</integer>
 			<key>HaltLevel</key>
@@ -1428,7 +1416,7 @@
 				<data></data>
 			</dict>
 		</dict>
-		<key>Block</key>
+		<key>Delete</key>
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<array>
@@ -1544,8 +1532,8 @@
 		<key>Drivers</key>
 		<array>
 			<string>HfsPlus.efi</string>
-			<string>OpenCanopy.efi</string>
 			<string>OpenRuntime.efi</string>
+			<string>OpenCanopy.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -1573,8 +1561,6 @@
 			<key>ClearScreenOnModeSwitch</key>
 			<false/>
 			<key>ConsoleMode</key>
-			<string></string>
-			<key>DirectGopCacheMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
 			<false/>
@@ -1628,16 +1614,18 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>DeduplicateBootOrder</key>
+			<true/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<false/>
-			<key>RequestBootVarFallback</key>
-			<true/>
 			<key>RequestBootVarRouting</key>
 			<true/>
+			<key>TscSyncTimeout</key>
+			<integer>0</integer>
 			<key>UnblockFsConnect</key>
 			<false/>
 		</dict>
