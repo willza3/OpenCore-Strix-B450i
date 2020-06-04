@@ -45,13 +45,27 @@ These settings were tested with BIOS v3004 (27/12/2019) - use the latest availab
 
 ## Known Issues
 
-* **Internal WiFi & Bluetooth are not supported by macOS.**
+**Internal WiFi & Bluetooth are not supported by macOS.**
 
-**Solution:** The internal wireless card can be replaced with a macOS compatible one (e.g Dell DW1820A). I haven't tried this myself, but there are reports of it working.
+* **Solution:** The internal wireless card can be replaced with a macOS compatible one (e.g Dell DW1820A). I haven't tried this myself, but there are reports of it working.
 
-* **Line-in microphones may not appear**
+**Line-in microphones may not appear.**
 
-**Solution:** AppleALC has minimal support for line-in microphones on Ryzen/TR CPUs. Buying a USB adapter seems to be the best option at this time.
+* **Solution:** AppleALC has minimal support for line-in microphones on Ryzen/TR CPUs. Buying a USB adapter seems to be the best option at this time.
+
+**Discord stuck in a crash loop.**
+
+* **Solution:** [Fix here](https://discordapp.com/channels/249992304503291905/263798638373896203/717912500498333746) (Method 2 worked for me)
+
+**Unable to wake from sleep.**
+
+* **Solution:** No fix at the moment.
+
+Sleep and Wake does not work if:
+
+* USB 2.0 device plugged into the motherboard's USB 3.1 I/O ports.
+* USB 2.0 device connected to a USB 3.0 hub and plugged into the motherboard's USB 3.1 I/O port, Sleep works if only the hub is plugged into a USB 2.0 I/O port.
+* Auto sleep and hibernate won't work if an external mechanical hard drive is mounted in macOS.
 
 **Please report any issues you find [here.](https://github.com/willza3/macOS-strix-B450i/issues)**
 
@@ -77,6 +91,6 @@ These settings were tested with BIOS v3004 (27/12/2019) - use the latest availab
 
 * [External­Display­Brightness](https://github.com/fnesveda/ExternalDisplayBrightness/releases)
 
-**Last Updated:** 2 June 2020
+**Last Updated:** 4 June 2020
 
 🌀
