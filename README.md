@@ -6,4 +6,5 @@
 
 ## Known Issues
 
-* **Doesn't boot**
+* **Sleep might not work**
+* **Hibernation on smbios imacpro1,1 only works after opening app**
