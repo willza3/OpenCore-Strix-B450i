@@ -8,25 +8,28 @@
 
 ⚠️ **OpenCore is still in beta. You may run into issues.**
 
-🔔 **Join the Telegram [Channel](https://t.me/macOSstrixB450i) for updates.**
+🔔 **Telegram [Channel](https://t.me/macOSstrixB450i)**
 
-Tested with macOS 10.15.6 b2 - any later versions of Catalina have not been tested so use them at your own risk! Check the branches for Big Sur support.
+Tested with macOS 10.15.7 ― later versions of macOS have not been tested. This EFI is not guaranteed to work flawlessly with your hardware, but it can be used as a starting point for getting your hackintosh up and running.
 
-If you would like to use iCloud services, you will need to [flush a new SMBIOS](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo). Using the included one is unsafe and can result in a permenantly blacklisted Apple ID - *you have been warned!*
+You will need to [flush a new SMBIOS](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) if you want to use iCloud services. The included SMBIOS is blacklisted and can result in a suspended Apple ID account.
 
-If you can, please consider [donating to AMD OSX.](https://forum.amd-osx.com/index.php?dbtech-donate/drives/amd-os-x.1/donate) Without the team, none of this would be possible.
+If you're able to, please consider [donating to AMD OSX.](https://forum.amd-osx.com/index.php?dbtech-donate/drives/amd-os-x.1/donate). Without the team, this fun project wouldn't be possible!
 
 ## System Specs
 
-* **Motherboard:** Asus Strix B450-i
+* **Motherboard:** Asus Strix B450-I
 	* LAN: Intel I211-AT
 	* Audio: SupremeFX S1220A
 	* Wireless: Realtek 8822BE
+	* SSD: Sabrent Rocket 1TB NVMe
 
 * **Processor:** AMD Ryzen 5 2600X
 * **Graphics:** Sapphire Nitro+ AMD Radeon RX 580 8GB
 
 ## Reccomended BIOS Settings
+
+Tested with BIOS v3004 - using the latest BIOS can reduce chances of issues.
 
 **Boot**
 
@@ -40,11 +43,9 @@ If you can, please consider [donating to AMD OSX.](https://forum.amd-osx.com/ind
 
 * USB Configuration → XHCI Hand-off → Enabled
 
-**Using a Ryzen G CPU?**
-
 * Core Performance Boost → Disabled
 
-These settings were tested with BIOS v3004 - use the latest available BIOS to mitigate any issues.
+> Ryzen G CPUs only - helps reduce audio crackling but won't fix it.
 
 ## Issues
 
@@ -60,10 +61,10 @@ These settings were tested with BIOS v3004 - use the latest available BIOS to mi
 
 * **Workaround:** [More details.](https://github.com/willza3/macOS-strix-B450i/issues/13#issuecomment-642053047) Thank you @conchodaus!
 
-**Discord gets stuck in a crash loop.**
+**Unable to open Discord.**
 
 * **Fix:** [Link](https://discordapp.com/channels/249992304503291905/263798638373896203/717912500498333746)
 
-**Last Updated:** 26 June 2020
+**Last Updated:** 4 November 2020
 
 🌀
