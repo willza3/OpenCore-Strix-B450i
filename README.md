@@ -2,19 +2,17 @@
 	<img src="https://ibin.co/52IbeCHLerMK.png"/>
 </p>
 
-<p align="center">
+<p>
 	<img src="https://ibin.co/4wROyHBs3PAE.png" width="383" height="46"/>
 </p>
 
-⚠️ **OpenCore is still in beta. You may run into issues.**
+Tested with macOS 11.0.1 - later versions have not been tested. This EFI isn't guaranteed to work flawlessly with your hardware... but it can be used as a starting point to aid getting your hackintosh up and running. Feel free to join my Telegram [channel](https://t.me/macOSstrixB450i).
 
-🔔 **Telegram [Channel](https://t.me/macOSstrixB450i)**
+You will need to [flush a new SMBIOS](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) if you want to use iCloud services. The included SMBIOS has been blacklisted and may result in a suspended iCloud account if you choose to use it.
 
-Tested with macOS 10.15.7 ― later versions of macOS have not been tested. This EFI is not guaranteed to work flawlessly with your hardware, but it can be used as a starting point for getting your hackintosh up and running.
+If you're able to, please consider [donating to AMD OSX.](https://forum.amd-osx.com/index.php?dbtech-donate/drives/amd-os-x.1/donate) Without the team, this fun project wouldn't be possible!
 
-You will need to [flush a new SMBIOS](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) if you want to use iCloud services. The included SMBIOS is blacklisted and can result in a suspended Apple ID account.
 
-If you're able to, please consider [donating to AMD OSX.](https://forum.amd-osx.com/index.php?dbtech-donate/drives/amd-os-x.1/donate). Without the team, this fun project wouldn't be possible!
 
 ## System Specs
 
@@ -65,6 +63,6 @@ Tested with BIOS v3004 - using the latest BIOS can reduce chances of issues.
 
 * **Fix:** [Link](https://discordapp.com/channels/249992304503291905/263798638373896203/717912500498333746)
 
-**Last Updated:** 4 November 2020
+**Last Updated:** 14 November 2020
 
 🌀
