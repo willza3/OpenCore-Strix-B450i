@@ -186,6 +186,11 @@
 				<key>layout-id</key>
 				<integer>7</integer>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x3,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>unfairgva</key>
+				<data></data>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
