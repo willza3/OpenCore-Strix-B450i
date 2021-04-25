@@ -1,18 +1,16 @@
-<p align="center">
-	<img src="https://ibin.co/52IbeCHLerMK.png"/>
+<p>
+	<img src="https://ibin.co/5zbFfCb4uxve.png">
 </p>
 
-<p>
+<p align="center">
 	<img src="https://ibin.co/4wROyHBs3PAE.png" width="383" height="46"/>
 </p>
 
-Tested with macOS 11.2.1 - later versions have not been tested. This EFI isn't guaranteed to work flawlessly with your hardware... but it can be used as a starting point to aid getting your hackintosh up and running. Feel free to join my Telegram [channel](https://t.me/macOSstrixB450i).
+Tested with macOS 11.2.3 — later versions have not been tested. This EFI is not guaranteed to 100% work with your hardware... but it can be used as a starting point to get your machine up and running. Feel free to join the [Telegram](https://t.me/macOSstrixB450i) channel for discussion and updates.
 
-You will need to [flush a new SMBIOS](https://dortania.github.io/OpenCore-Desktop-Guide/AMD/zen.html#platforminfo) if you want to use iCloud services. The included SMBIOS has been blacklisted and may result in a suspended iCloud account if you choose to use it.
+You will need to [flush a new SMBIOS](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo) if you wish to use iCloud services. The included SMBIOS has been blacklisted by Apple and will likely result in a suspended iCloud account if you choose to use it. You have been warned!
 
-If you're able to, please consider [donating to AMD OSX.](https://forum.amd-osx.com/index.php?dbtech-donate/drives/amd-os-x.1/donate) Without the team, this fun project wouldn't be possible!
-
-
+If you're able to, please consider [donating to AMD OS X.](https://forum.amd-osx.com/index.php?dbtech-donate/drives/amd-os-x.1/donate) Without the team, none of this would be possible!
 
 ## System Specs
 
@@ -25,9 +23,9 @@ If you're able to, please consider [donating to AMD OSX.](https://forum.amd-osx.
 * **Processor:** AMD Ryzen 5 2600X
 * **Graphics:** Sapphire Nitro+ AMD Radeon RX 580 8GB
 
-## Reccomended BIOS Settings
+## BIOS Settings
 
-Tested with BIOS v4204 (January 2021) - If you are having issues with booting, try upgrading to this BIOS version first!
+Tested with BIOS 4301 (March 2021) - try upgrading to this version before troubleshooting any issues.
 
 **Boot**
 
@@ -43,26 +41,14 @@ Tested with BIOS v4204 (January 2021) - If you are having issues with booting, t
 
 * Core Performance Boost → Disabled
 
-> Ryzen G CPUs only - helps reduce audio crackling but won't fix it.
+> For Ryzen G CPUs only - helps reduce audio crackling but **won't** fix it.
 
-## Issues
+## Known Issues
 
-**Internal WiFi & Bluetooth is not supported by macOS.**
+**Internal WiFi & Bluetooth is not working.**
 
-* **Workaround:** The internal wireless card can be replaced with one that is compatible with macOS.
+* **Fix:** The internal wireless card can be replaced with one that is compatible with macOS.
 
-**Line-in microphones may not work.**
+**Discord stuck in a crash loop.**
 
-* **Workaround:** AppleALC does not support line-in microphones. Currently, the best option is to purchase a USB adapter.
-
-**Unable to wake from sleep.**
-
-* **Workaround:** [More details.](https://github.com/willza3/macOS-strix-B450i/issues/13#issuecomment-642053047) Thank you @conchodaus!
-
-**Unable to open Discord.**
-
-* **Fix:** [Link](https://discordapp.com/channels/249992304503291905/263798638373896203/717912500498333746)
-
-**Last Updated:** 24 Feb 2021
-
-🌀
+* **Fix:** [Here](https://www.reddit.com/r/hackintosh/comments/g6bwuu/discord_keeps_crashing_every_time_i_join_a_voice/fv43nwi?utm_source=share&utm_medium=web2x&context=3)
