@@ -6,7 +6,7 @@
 	<img src="https://ibin.co/4wROyHBs3PAE.png" width="383" height="46"/>
 </p>
 
-Tested with macOS 11.2.3 — later versions have not been tested. This EFI is not guaranteed to 100% work with your hardware... but it can be used as a starting point to get your machine up and running. Feel free to join the [Telegram](https://t.me/macOSstrixB450i) channel for discussion and updates.
+Tested with macOS 11.3.1 — later versions have not been tested. This EFI is not guaranteed to 100% work with your hardware... but it can be used as a starting point to get your machine up and running. Feel free to join the [Telegram](https://t.me/macOSstrixB450i) channel for discussion and updates.
 
 You will need to [flush a new SMBIOS](https://dortania.github.io/OpenCore-Install-Guide/AMD/zen.html#platforminfo) if you wish to use iCloud services. The included SMBIOS has been blacklisted by Apple and will likely result in a suspended iCloud account if you choose to use it. You have been warned!
 
@@ -18,6 +18,7 @@ If you're able to, please consider [donating to AMD OS X.](https://forum.amd-osx
 	* LAN: Intel I211-AT
 	* Audio: SupremeFX S1220A
 	* Wireless: Realtek 8822BE
+	* Bluetooth: Laird BT852 (USB)
 	* SSD: Sabrent Rocket 1TB NVMe
 
 * **Processor:** AMD Ryzen 5 2600X
