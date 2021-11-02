@@ -46,6 +46,10 @@ Tested with BIOS 4301 (March 2021) - try upgrading to this version before troubl
 
 ## Known Issues
 
+**Ethernet does not work on macOS Monterey**
+
+* **TLDR: STAY ON BIG SUR IF YOU RELY ON BUILT-IN ETHERNET!** Apple made changes in Monterey which resulted in the SmallTree kext no longer working, unfortunately khronokernel does not own the hardware anymore so it's likely this issue won't be fixed for quite some time.
+
 **Internal WiFi & Bluetooth is not working.**
 
 * **Fix:** The internal wireless card can be replaced with one that is compatible with macOS.
