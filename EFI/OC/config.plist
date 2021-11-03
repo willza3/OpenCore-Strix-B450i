@@ -207,8 +207,6 @@
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
 			<true/>
-			<key>ResizeAppleGpuBars</key>
-			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
 			<false/>
 			<key>SignalAppleOS</key>
@@ -1163,13 +1161,13 @@
 			<key>AdviseFeatures</key>
 			<false/>
 			<key>MLB</key>
-			<string>C029269024NJG36CB</string>
+			<string>CHANGE THIS</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>BJIm2gyS</data>
+			<data>AAAAAAAA</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -1177,9 +1175,9 @@
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZW0B1HX87</string>
+			<string>CHANGE THIS</string>
 			<key>SystemUUID</key>
-			<string>DEA17B2D-2F9F-4955-B266-A74C47678AD3</string>
+			<string>CHANGE THIS</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -1391,8 +1389,6 @@
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
-			<key>ResizeGpuBars</key>
-			<integer>-1</integer>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>
