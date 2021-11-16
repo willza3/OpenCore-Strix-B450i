@@ -26,7 +26,7 @@ If you're able to, please consider [donating to AMD OS X.](https://forum.amd-osx
 
 ## BIOS Settings
 
-Tested with BIOS 4301 (March 2021) - try upgrading to this version before troubleshooting any issues.
+Tested with BIOS 4602 (September 2021) - try upgrading to this version before troubleshooting any issues.
 
 **Boot**
 
