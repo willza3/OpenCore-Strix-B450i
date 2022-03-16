@@ -30,7 +30,7 @@ Tested with BIOS 4602 (September 2021) - try upgrading to this version before tr
 
 * **Motherboard:** Asus Strix B450-I
 	* LAN: Intel I211-AT
-	* Audio: SupremeFX S1220A
+	* Audio: SupremeFX S1220A (ALC1150 Codec)
 	* Wireless: Realtek 8822BE
 	* Bluetooth: Laird BT852 (USB)
 	* SSD: Sabrent Rocket 1TB NVMe
@@ -38,12 +38,16 @@ Tested with BIOS 4602 (September 2021) - try upgrading to this version before tr
 * **Processor:** AMD Ryzen 5 2600X
 * **Graphics:** Sapphire Nitro+ AMD Radeon RX 580 8GB
 
-## Known Issues
+## Common Questions
 
-**Internal WiFi & Bluetooth is not working.**
+**My audio isn't working!**
 
-* **Fix:** The internal wireless card can be replaced with one that is compatible with macOS.
+* Certain revisions of this motherboard, either for the Chinese market or those produced around mid-late 2021 have a different device path for the multimedia controller. Try changing the path in your config.plist from ```PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x3)``` to ```PciRoot(0x0)/Pci(0x8,0x1)/Pci(0x0,0x4)```
 
-**Discord stuck in a crash loop.**
+**My internal WiFi & Bluetooth isn't working!**
 
-* **Fix:** [Solution](https://discord.com/channels/249992304503291905/283346899799638016/953634716479799297) (Opens AMD OS X Discord, highly reccomend being part of this server!)
+* The internal wireless card is not natively compatible, but can be replaced with one that is compatible with macOS.
+
+**My Discord stuck in a crash loop!**
+
+* [Solution here](https://discord.com/channels/249992304503291905/283346899799638016/953634716479799297) (Opens AMD OS X Discord) I highly reccomend becoming part of this server if you are not already!
